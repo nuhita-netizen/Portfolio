@@ -30,3 +30,5 @@ To run this project locally:
    ```bash
    npm run dev
    ```
+4. Access the Ocean Portfolio locally:
+   - **Localhost:** [http://localhost:5173/ocean_portfolio.html#projects](http://localhost:5173/ocean_portfolio.html#projects)
