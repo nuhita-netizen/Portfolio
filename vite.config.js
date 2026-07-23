@@ -9,7 +9,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'ocean_portfolio.html')
+        main: resolve(__dirname, 'index.html')
       }
     }
   }

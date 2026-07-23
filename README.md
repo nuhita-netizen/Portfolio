@@ -1,18 +1,18 @@
 # Personal Portfolio
 
-Welcome to my personal portfolio! This is a modern, responsive website built with React, Vite, and Tailwind CSS to showcase my projects, skills, and experience.
+Welcome to my personal portfolio! This is a modern, responsive website built with HTML, Tailwind CSS, and Vite showcasing my projects, skills, and experience.
 
 ## 🚀 Live Demo
 
 Check out the live version of the portfolio here:
-[https://portfolio-2006-nuhita-1f94b.web.app](https://portfolio-2006-nuhita-1f94b.web.app)
+[https://nuhita-portfolio.vercel.app](https://nuhita-portfolio.vercel.app)
 
 ## 🛠️ Tech Stack
 
-- **Framework:** React
+- **Language:** HTML5, JavaScript
 - **Build Tool:** Vite
 - **Styling:** Tailwind CSS
-- **Hosting:** Firebase
+- **Hosting:** Vercel
 
 ## 💻 Local Development
 
@@ -24,11 +24,11 @@ To run this project locally:
    ```
 2. Install dependencies:
    ```bash
-   npm install
+   npm.cmd install
    ```
 3. Start the development server:
    ```bash
-   npm run dev
+   npm.cmd run dev
    ```
 4. Access the Ocean Portfolio locally:
-   - **Localhost:** [http://localhost:5173/ocean_portfolio.html#projects](http://localhost:5173/ocean_portfolio.html#projects)
+   - **Localhost:** [http://localhost:5173/](http://localhost:5173/)
