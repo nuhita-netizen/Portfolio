@@ -8,16 +8,16 @@ export default function Projects() {
       title: "Vibe Spaciee: AI-Driven Room Organizer",
       description: "An intelligent room organization application that uses computer vision to analyze space utilization and generate actionable recommendations for optimal furniture arrangements.",
       problem: "How can we leverage AI to help people organize their living spaces more efficiently?",
-      tech: ["Python", "YOLOv8", "Computer Vision", "FastAPI", "REST APIs", "Image Processing"],
+      tech: ["Data Analytics", "Python", "YOLOv8", "Computer Vision", "FastAPI", "REST APIs", "Image Processing"],
       features: [
         "Real-time furniture detection from image inputs",
-        "Spatial analysis and layout optimization",
-        "Clutter detection and recommendations",
+        "Spatial data analytics and layout optimization",
+        "Clutter detection and space utilization recommendations",
         "Structured coordinate mapping for furniture placement",
         "Scalable REST API for concurrent uploads"
       ],
       learnings: [
-        "Advanced computer vision techniques (object detection, spatial analysis)",
+        "Advanced computer vision & spatial data analysis",
         "Building high-performance REST APIs with FastAPI",
         "Modular architecture design for scalability",
         "Integration of ML models in production systems"
@@ -31,7 +31,7 @@ export default function Projects() {
       title: "GrindRoom: Real-Time Collaborative Study Platform",
       description: "A real-time collaborative study platform enabling synchronized pomodoro focus sessions for up to 3 concurrent users with built-in resource sharing features.",
       problem: "How can we create a distraction-free collaborative study environment for remote learners?",
-      tech: ["Node.js", "Express", "Socket.IO", "WebSocket", "JavaScript", "Railway", "HTML/CSS"],
+      tech: ["Data Analytics", "Node.js", "Express", "Socket.IO", "WebSocket", "JavaScript", "Railway", "HTML/CSS"],
       features: [
         "Synchronized pomodoro focus sessions (up to 3 users)",
         "Real-time room & timer synchronization",
@@ -50,6 +50,30 @@ export default function Projects() {
       github: "https://github.com/nuhita-netizen",
       demo: "#", // Add link
       role: "Project Leader (Feb 2026 - June 2026)",
+      primary: false
+    },
+    {
+      title: "BenefitBuddy: AI-Powered Government Scheme Discovery & Eligibility Platform",
+      description: "An AI-powered discovery platform designed to determine eligibility and match citizens with government welfare schemes and insurance programs using hybrid rule engines and machine learning.",
+      problem: "How can we simplify complex government scheme criteria and instantly connect eligible citizens to the right benefits?",
+      tech: ["Python", "FastAPI", "React", "XGBoost", "Gemini API", "SQLite", "PostgreSQL"],
+      features: [
+        "End-to-end data architecture with deterministic rules engine for hard eligibility filters",
+        "XGBoost model ranking schemes by relevance, benefit value, and applicant profile",
+        "Dynamic data layer with nightly automated jobs validating scheme rules against official sources",
+        "Unified eligibility logic integrating scheme matching with insurance comparison in a single profile",
+        "Tested against real applicant scenarios (farmer subsidies and student scholarships)"
+      ],
+      learnings: [
+        "Hybrid rule-engine and Machine Learning recommendation pipelines",
+        "Integrating LLM capabilities with Gemini API for contextual assistance",
+        "Automated data pipelines and scheduled verification workflows",
+        "Rapid prototyping and data modeling under hackathon conditions"
+      ],
+      github: "https://github.com/nuhita-netizen",
+      demo: "#",
+      role: "Team Project (UTKARSH 1.0 / IIT-B Honeywell Hackathon)",
+      status: "2026 – Present",
       primary: false
     }
   ];

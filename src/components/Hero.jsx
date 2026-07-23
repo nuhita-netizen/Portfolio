@@ -32,11 +32,11 @@ export default function Hero() {
             </h1>
             
             <h2 className="text-xl lg:text-2xl text-gray-700 dark:text-gray-300 font-medium mb-4">
-              3rd year CSE Student | JNTU Hyderabad
+              3rd year CSE Student | JNTU Hyderabad — Data Analytics & AI Researcher
             </h2>
             
             <p className="text-gray-600 dark:text-gray-400 text-lg mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Building intelligent systems at the intersection of computer vision and real-time systems. Passionate about solving real-world problems with technology.
+              Building data-driven & intelligent systems with expertise in Data Analytics, Computer Vision, and Machine Learning.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">

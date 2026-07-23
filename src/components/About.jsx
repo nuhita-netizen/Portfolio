@@ -5,7 +5,7 @@ import { GraduationCap, Code2, Cpu, Calendar, Code } from 'lucide-react';
 export default function About() {
   const quickFacts = [
     { icon: <GraduationCap size={20} />, label: "College", value: "JNTU Hyderabad (3rd Year)" },
-    { icon: <Cpu size={20} />, label: "Primary Focus", value: "AI/ML, Computer Vision" },
+    { icon: <Cpu size={20} />, label: "Primary Focus", value: "Data Analytics, AI/ML, Computer Vision" },
     { icon: <Calendar size={20} />, label: "Expected Graduation", value: "Sep 2029" },
     { icon: <Code size={20} />, label: "GitHub Repos", value: "2+ active projects" },
   ];
@@ -33,13 +33,13 @@ export default function About() {
             className="flex-1 space-y-6 text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
           >
             <p>
-              I'm a 3rd-year CSE student at JNTU Hyderabad with a strong focus on AI-driven applications. My passion lies in building intelligent systems that solve real-world problems, particularly at the intersection of computer vision, machine learning, and backend systems.
+              I'm a 3rd-year CSE student at JNTU Hyderabad with a strong focus on Data Analytics & AI-driven applications. My passion lies in building intelligent systems that solve real-world problems, combining exploratory data analysis, spatial telemetry, and machine learning.
             </p>
             <p>
-              Currently, I'm working on Vibe Spaciee, an AI-powered room organiser that uses YOLOv8 computer vision for detecting furniture and optimising space layouts. I've also led the development of GrindRoom, a real-time collaborative study platform with synchronized pomodoro sessions.
+              Currently, I'm working on Vibe Spaciee, an AI-powered room organiser that uses YOLOv8 computer vision for detecting furniture and optimising space layouts and plan a budget according to the users need. I've also led the development of GrindRoom, a real-time collaborative study platform with synchronized pomodoro sessions and telemetry tracking.
             </p>
             <p>
-              I'm interested in research opportunities in data-driven optimisation, spatial analysis using machine learning, and have a keen interest in Quantum Computing research. When I'm not coding, you'll find me solving algorithmic problems or exploring new technologies.
+              Certified by NASSCOM in AI & Data Analytics, I am deeply interested in research opportunities in data-driven optimization, predictive analytics, and Quantum Computing research. When I'm not coding, you'll find me analyzing complex datasets, solving algorithmic problems, or exploring emerging tech.
             </p>
           </motion.div>
 

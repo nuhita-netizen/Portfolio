@@ -134,9 +134,18 @@ export default function Education() {
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Certifications</h3>
             </div>
             
-            <div className="relative z-10">
+            <div className="relative z-10 space-y-4">
+              <div className="p-4 rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 border border-blue-200 dark:border-blue-800 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div>
+                  <span className="inline-block px-2.5 py-0.5 bg-primary text-white text-xs font-bold rounded-full mb-1">
+                    Featured Certification
+                  </span>
+                  <h4 className="text-lg font-bold text-gray-900 dark:text-white">NASSCOM Certified: AI &amp; Data Analytics</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">Skill India Digital Hub — Comprehensive data modeling, exploratory analytics, and statistical decision frameworks.</p>
+                </div>
+              </div>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed font-medium">
-                I've completed 6 professional certifications from industry-leading organizations. The NASSCOM certifications from Skill India Digital Hub demonstrate expertise in cloud computing and DevOps for AI applications. The Forage job simulations provided practical experience in data analytics with modern AI tools. Coursera certifications validate foundational programming skills in Python and C.
+                I've completed 6 professional certifications from industry-leading organizations. The NASSCOM Certification from Skill India Digital Hub demonstrates core competency in Data Analytics and AI workflows. Additional certifications from Forage and Coursera cover data analytics, cloud computing, and advanced algorithmic programming in Python and C.
               </p>
             </div>
           </div>

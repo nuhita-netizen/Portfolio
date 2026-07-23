@@ -7,7 +7,7 @@ export default function Contact() {
     { icon: <Mail size={20} />, label: "Email", value: "nuhitag6@gmail.com", href: "mailto:nuhitag6@gmail.com", color: "hover:bg-red-50 hover:text-red-600 dark:hover:bg-red-900/20" },
     { icon: <Briefcase size={20} />, label: "LinkedIn", value: "G Nuhita", href: "https://www.linkedin.com/in/g-nuhita-89653633a/", color: "hover:bg-blue-50 hover:text-blue-600 dark:hover:bg-blue-900/20" },
     { icon: <Code size={20} />, label: "GitHub", value: "nuhita-netizen", href: "https://github.com/nuhita-netizen", color: "hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-800 dark:hover:text-white" },
-    { icon: <Phone size={20} />, label: "Phone", value: "+91 9063072138", href: "tel:+919063072138", color: "hover:bg-green-50 hover:text-green-600 dark:hover:bg-green-900/20" },
+    { icon: <Phone size={20} />, label: "Phone", value: "Available upon request", href: "mailto:nuhitag6@gmail.com?subject=Phone%20Number%20Request", color: "hover:bg-green-50 hover:text-green-600 dark:hover:bg-green-900/20" },
   ];
 
   return (

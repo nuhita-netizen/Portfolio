@@ -29,7 +29,7 @@ export default function Skills() {
       skills: "Node.js, Express.js, FastAPI",
       details: [
         "REST API design and development",
-        "Backend architecture and scalability",
+        "System architecture and scalability",
         "High-performance API optimization"
       ]
     },
