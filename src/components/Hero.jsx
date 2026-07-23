@@ -32,7 +32,7 @@ export default function Hero() {
             </h1>
             
             <h2 className="text-xl lg:text-2xl text-gray-700 dark:text-gray-300 font-medium mb-4">
-              3rd year CSE Student | JNTU Hyderabad — Data Analytics & AI Researcher
+              3rd year CSE Student | JNTU Hyderabad — Data Analytics & Quantum Researcher
             </h2>
             
             <p className="text-gray-600 dark:text-gray-400 text-lg mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
