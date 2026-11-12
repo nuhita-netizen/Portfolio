@@ -36,7 +36,7 @@ export default function About() {
               I'm a 3rd-year CSE student at JNTU Hyderabad with a strong focus on Data Analytics & AI-driven applications. My passion lies in building intelligent systems that solve real-world problems, combining exploratory data analysis, spatial telemetry, and machine learning.
             </p>
             <p>
-              Currently, I'm working on Vibe Spaciee, an AI-powered room organiser that uses YOLOv8 computer vision for detecting furniture and optimising space layouts and plan a budget according to the users need. I've also led the development of GrindRoom, a real-time collaborative study platform with synchronized pomodoro sessions and telemetry tracking.
+              Currently, I lead the development of GrindRoom, a real-time collaborative study platform with synchronized pomodoro sessions and telemetry tracking, and BenefitBuddy, an AI-powered civic intelligence system streamlining citizen eligibility for public schemes.
             </p>
             <p>
               Certified by NASSCOM in AI & Data Analytics, I am deeply interested in research opportunities in data-driven optimization, predictive analytics, and Quantum Computing research. When I'm not coding, you'll find me analyzing complex datasets, solving algorithmic problems, or exploring emerging tech.

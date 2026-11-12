@@ -1,725 +1,1510 @@
 <!DOCTYPE html>
 
-<html class="scroll-smooth" lang="en"><head>
+<html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Gajula Nuhita | Data Analytics &amp; CS Researcher</title>
+<title>Gajula Nuhita - Data Analytics &amp; CS Researcher</title>
+<!-- Google Fonts: Space Grotesk, Epilogue, Space Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with plugins -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Dancing+Script:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "inverse-primary": "#bfc2ff",
-                        "error": "#ba1a1a",
-                        "primary-fixed": "#e0e0ff",
-                        "inverse-surface": "#303037",
-                        "on-tertiary-container": "#a96ee1",
-                        "on-primary-fixed-variant": "#3239a3",
-                        "outline-variant": "#c6c5d5",
-                        "secondary": "#00658b",
-                        "on-tertiary": "#ffffff",
-                        "on-error": "#ffffff",
-                        "primary-container": "#000080",
-                        "surface-container-lowest": "#ffffff",
-                        "on-background": "#1b1b22",
-                        "on-secondary": "#ffffff",
-                        "surface-container-low": "#f5f2fc",
-                        "on-tertiary-fixed": "#2c0050",
-                        "on-secondary-fixed": "#001e2c",
-                        "tertiary-fixed": "#f0dbff",
-                        "tertiary": "#15002b",
-                        "on-primary-fixed": "#00006e",
-                        "on-error-container": "#93000a",
-                        "surface-container": "#efecf6",
-                        "surface": "#fbf8ff",
-                        "outline": "#767684",
-                        "error-container": "#ffdad6",
-                        "on-secondary-container": "#005777",
-                        "secondary-container": "#77cdfd",
-                        "on-primary-container": "#777eea",
-                        "surface-dim": "#dbd9e2",
-                        "inverse-on-surface": "#f2eff9",
-                        "on-tertiary-fixed-variant": "#622599",
-                        "surface-variant": "#e4e1eb",
-                        "on-surface": "#1b1b22",
-                        "secondary-fixed-dim": "#7cd0ff",
-                        "surface-container-highest": "#e4e1eb",
-                        "on-surface-variant": "#464653",
-                        "on-secondary-fixed-variant": "#004c69",
-                        "background": "#fbf8ff",
-                        "surface-bright": "#fbf8ff",
-                        "tertiary-fixed-dim": "#ddb7ff",
-                        "secondary-fixed": "#c4e7ff",
-                        "on-primary": "#ffffff",
-                        "surface-container-high": "#eae7f0",
-                        "tertiary-container": "#35005e",
-                        "primary-fixed-dim": "#bfc2ff",
-                        "surface-tint": "#4b53bc",
-                        "primary": "#00003c"
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    spacing: {
-                        "margin-mobile": "24px",
-                        "gutter": "24px",
-                        "max-width": "1440px",
-                        "margin-desktop": "64px",
-                        "unit": "8px"
-                    },
-                    fontFamily: {
-                        "body-md": ["Plus Jakarta Sans"],
-                        "display-lg-mobile": ["Playfair Display"],
-                        "body-lg": ["Plus Jakarta Sans"],
-                        "headline-md": ["Playfair Display"],
-                        "headline-lg": ["Playfair Display"],
-                        "display-lg": ["Playfair Display"],
-                        "label-md": ["Plus Jakarta Sans"],
-                        "playfair": ["Playfair Display"],
-                        "script": ["Dancing Script"]
-                    },
-                    fontSize: {
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
-                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
-                    }
-                },
-            },
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary-container": "#42473f",
+            "tertiary-container": "#b0b5ab",
+            "on-primary-fixed": "#281900",
+            "inverse-on-surface": "#2c3226",
+            "on-secondary-fixed-variant": "#474744",
+            "on-primary-fixed-variant": "#604100",
+            "secondary-container": "#474744",
+            "surface-bright": "#353b2f",
+            "inverse-primary": "#7e5700",
+            "inverse-surface": "#dee5d3",
+            "surface-container-high": "#262c20",
+            "on-primary": "#432c00",
+            "on-secondary-container": "#b6b5b1",
+            "on-secondary-fixed": "#1b1c1a",
+            "primary-fixed-dim": "#fabc4d",
+            "on-error": "#690005",
+            "outline-variant": "#504535",
+            "on-secondary": "#30312e",
+            "primary": "#ffc665",
+            "surface-container": "#1b2116",
+            "secondary": "#c8c6c3",
+            "on-surface": "#dee5d3",
+            "primary-container": "#e5a93c",
+            "secondary-fixed-dim": "#c8c6c3",
+            "tertiary": "#ccd1c6",
+            "surface-container-lowest": "#0a1006",
+            "surface-variant": "#30372b",
+            "tertiary-fixed": "#dfe4d9",
+            "primary-fixed": "#ffdead",
+            "error-container": "#93000a",
+            "on-error-container": "#ffdad6",
+            "on-primary-container": "#5e4000",
+            "on-surface-variant": "#d4c4b0",
+            "surface-container-low": "#171d13",
+            "on-tertiary-fixed-variant": "#434840",
+            "on-background": "#dee5d3",
+            "on-tertiary": "#2d322a",
+            "outline": "#9d8f7c",
+            "surface-dim": "#0f150b",
+            "error": "#ffb4ab",
+            "secondary-fixed": "#e4e2de",
+            "surface-container-highest": "#30372b",
+            "background": "#0f150b",
+            "surface": "#0f150b",
+            "tertiary-fixed-dim": "#c3c8be",
+            "on-tertiary-fixed": "#181d16",
+            "surface-tint": "#fabc4d"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "margin": "2rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "margin-mobile": "1rem",
+            "gutter-mobile": "0.75rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "gutter": "1.25rem"
+          },
+          "fontFamily": {
+            "title-md": ["Space Grotesk"],
+            "body-sm": ["Space Grotesk"],
+            "title-lg": ["Space Grotesk"],
+            "display-lg-mobile": ["Epilogue"],
+            "display-lg": ["Epilogue"],
+            "body-lg": ["Space Grotesk"],
+            "label-md": ["Space Mono"],
+            "headline-md": ["Epilogue"],
+            "body-md": ["Space Grotesk"],
+            "label-sm": ["Space Mono"],
+            "headline-lg": ["Epilogue"],
+            "label-lg": ["Space Mono"]
+          },
+          "fontSize": {
+            "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-sm": ["10px", { "lineHeight": "12px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }]
+          }
         }
-    </script>
+      }
+    };
+  </script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        
-        .paper-texture {
-            background-color: #fbf8ff;
-            background-image: url("https://www.transparenttextures.com/patterns/felt-paper.png");
-        }
+    /* Dot Matrix Engineering Grid Canvas */
+    .bg-dot-matrix {
+      background-image: radial-gradient(rgba(229, 169, 60, 0.12) 1.2px, transparent 1.2px);
+      background-size: 24px 24px;
+    }
 
-        .watercolor-wash {
-            mask-image: radial-gradient(circle, black 50%, transparent 100%);
-            opacity: 0.15;
-            pointer-events: none;
-        }
+    /* Claymorphic Tactile Extrusions */
+    .clay-surface {
+      box-shadow: 
+        0 14px 28px -4px rgba(10, 16, 6, 0.8),
+        0 4px 10px rgba(0, 0, 0, 0.4),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.14),
+        inset -3px -4px 8px rgba(0, 0, 0, 0.6);
+    }
+    .clay-pill {
+      box-shadow: 
+        0 6px 14px -2px rgba(10, 16, 6, 0.7),
+        inset 1.5px 1.5px 3px rgba(255, 255, 255, 0.22),
+        inset -2px -2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .clay-sunken {
+      box-shadow: 
+        inset 3px 3px 8px rgba(0, 0, 0, 0.75),
+        inset -1px -1px 3px rgba(255, 255, 255, 0.08);
+    }
 
-        .floating {
-            animation: floating 6s ease-in-out infinite;
-        }
+    /* Die-Cut Vinyl Sticker Shadow */
+    .sticker-shadow {
+      box-shadow: 0 4px 0px rgba(10, 16, 6, 0.9), 0 6px 12px rgba(0, 0, 0, 0.5);
+    }
 
-        @keyframes floating {
-            0% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(2deg); }
-            100% { transform: translateY(0px) rotate(0deg); }
-        }
+    /* Chrome Stamped Hardware Metal Finish */
+    .chrome-hardware {
+      background: linear-gradient(135deg, #f0f3eb 0%, #a2a89c 40%, #444c3c 75%, #ced4c7 100%);
+      border: 1px solid rgba(255, 255, 255, 0.45);
+    }
 
-        .brush-border {
-            border: 2px solid transparent;
-            border-image: url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M0,0 Q50,5 100,0 Q95,50 100,100 Q50,95 0,100 Q5,50 0,0" fill="none" stroke="%2300003c" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>') 20 stretch;
-        }
-
-        .text-vertical {
-            writing-mode: vertical-rl;
-        }
-
-        .wave-path {
-            stroke-dasharray: 1000;
-            stroke-dashoffset: 1000;
-            animation: dash 5s linear infinite;
-        }
-
-        @keyframes dash {
-            to { stroke-dashoffset: 0; }
-        }
-    </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
+    /* Subtle Scanlines Overlay */
+    .scanlines {
+      background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0, 0, 0.15) 1px,
+        transparent 1px,
+        transparent 2px
+      );
+      pointer-events: none;
     }
   </style>
-  </head>
-<body class="paper-texture text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
-<!-- Top Navigation -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-[0_10px_30px_rgba(0,123,167,0.05)]">
-<div class="flex justify-between items-center px-margin-desktop py-4 max-w-max-width mx-auto">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">waves</span>
-<span class="font-headline-md text-headline-md font-semibold text-primary tracking-tight">Gajula Nuhita</span>
-</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md" href="#about">About</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md" href="#projects">Projects</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label-md text-label-md" href="#certs">Certifications</a>
-<a class="px-6 py-2 bg-primary text-on-primary rounded-full font-label-md text-label-md hover:scale-105 transition-transform duration-300" href="#">Contact</a>
-</div>
-</div>
-</nav>
-<!-- Hero Section -->
-<header class="relative min-h-screen pt-32 overflow-hidden flex flex-col items-center justify-center px-margin-mobile md:px-margin-desktop">
-<!-- Decorative Splatters -->
-<div class="absolute top-20 left-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl watercolor-wash"></div>
-<div class="absolute bottom-20 right-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl watercolor-wash"></div>
-<!-- Top Left Pill Badge -->
-<div class="absolute top-32 left-margin-desktop hidden lg:block">
-<div class="px-6 py-2 bg-primary text-white rounded-full flex items-center gap-2 shadow-lg animate-bounce">
-<span class="material-symbols-outlined text-sm">waves</span>
-<span class="font-label-md text-label-md uppercase tracking-widest">Find me in the waves</span>
-</div>
-</div>
-<!-- Illustrations (Surrounding the text) -->
-<div class="absolute inset-0 pointer-events-none overflow-hidden">
-<!-- CS Elements -->
-<div class="absolute top-40 right-[15%] floating opacity-30">
-<span class="material-symbols-outlined text-[120px] text-primary" style="font-variation-settings: 'FILL' 0, 'wght' 200;">terminal</span>
-</div>
-<div class="absolute top-[60%] left-[10%] floating opacity-20 delay-700">
-<span class="material-symbols-outlined text-[160px] text-secondary" style="font-variation-settings: 'FILL' 0, 'wght' 200;">memory</span>
-</div>
-<div class="absolute bottom-40 left-[25%] floating opacity-30 delay-1000">
-<span class="material-symbols-outlined text-[100px] text-primary" style="font-variation-settings: 'FILL' 0, 'wght' 200;">code_blocks</span>
-</div>
-<div class="absolute top-[20%] left-[30%] floating opacity-20 delay-500">
-<span class="material-symbols-outlined text-[80px] text-secondary" style="font-variation-settings: 'FILL' 0, 'wght' 200;">data_object</span>
-</div>
-<!-- Wave Graphic Overlay -->
-<div class="absolute bottom-0 left-0 w-full opacity-30">
-<img class="w-full h-auto" data-alt="A wide, sweeping horizontal watercolor brushstroke representing rolling ocean waves in various shades of navy, azure, and cerulean. The edges are soft and irregular, creating a natural maritime feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUcS2NfPGAuQgzU7tcv5Re72SoQgvSJl1OCF4zplkJOTtQLP0sL0nlVxFTRg85wtmzEKqjsmF7LI2w0S1b0QFxvUWaCXRkvBlORifsYtTv-S8Qu_vlaT8gM7T2fXqjU3FbZy6LmbfZR2oxder1QGWSsRGBKfuU4cc9GKVZ5Q7GanQE_fGKUI7bcvFReto-1c-o5iHUpyHRmtNGiLcg_f3ookgA4MN5awi6SMWH9-ea-8HQRxFBUd468ZByQquaO9SW2qounYuGqMM"/>
-</div>
-</div>
-<!-- Centerpiece Text -->
-<div class="relative z-10 text-center select-none mt-12">
-<p class="font-script text-3xl md:text-5xl text-secondary mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">welcome to the portfolio of</p>
-<div class="flex flex-col font-playfair font-black text-primary leading-none text-[80px] md:text-[140px] tracking-tighter">
-<span class="animate-[slideInLeft_1s_ease-out_forwards]">GAJULA</span>
-<span class="animate-[slideInRight_1s_ease-out_forwards]">NUHITA</span>
-</div>
-<div class="mt-8 flex flex-col items-center">
-<p class="font-label-md text-label-md uppercase tracking-[0.5em] text-on-surface-variant animate-pulse">CS, Data Analytics &amp; Quantum Researcher</p>
-<!-- Bottom CS Element -->
-<div class="mt-12 opacity-80 max-w-sm flex justify-center">
-<span class="material-symbols-outlined text-[80px] text-secondary/60">hub</span>
-</div>
-</div>
-</div>
-<!-- Profile Card Banner (Top Left) -->
-<div class="absolute top-32 left-margin-desktop z-30 animate-[fadeIn_1s_ease-out_forwards]">
-<div class="relative flex items-center gap-4 px-6 py-4 bg-primary text-on-primary rounded-full shadow-2xl transform hover:-translate-y-1 transition-transform">
-<img src="src/assets/profile.jpg" alt="Gajula Nuhita" class="w-16 h-16 rounded-full object-cover border-2 border-secondary-fixed shadow-md" />
-<div>
-<h1 class="font-headline-md text-xl m-0 whitespace-nowrap">Gajula Nuhita</h1>
-<a href="https://www.linkedin.com/in/gajula-nuhita-89653633a/" target="_blank" rel="noopener noreferrer" class="font-label-md text-xs uppercase tracking-widest text-secondary-fixed mt-1 hover:text-white transition-colors flex items-center gap-1">
-<svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-Let's Connect
+</head>
+<body class="bg-surface text-on-surface bg-dot-matrix min-h-screen relative overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container font-body-md antialiased pb-28">
+<!-- Scanline Layer -->
+<div class="scanlines fixed inset-0 z-40 opacity-40"></div>
+<!-- SHARED COMPONENT: TopNavBar (Pill Floating Shell) -->
+<header class="fixed top-4 left-1/2 -translate-x-1/2 w-[92%] max-w-5xl rounded-full z-50 bg-surface-container shadow-md outline outline-1 outline-outline-variant/30 backdrop-blur-md">
+<div class="flex justify-between items-center px-6 py-3 w-full">
+<!-- Brand Logo -->
+<a id="brand-logo" class="flex items-center gap-2 group cursor-pointer" href="#" title="Scroll to Top">
+<span class="w-3 h-3 rounded-full bg-primary animate-pulse shadow-[0_0_8px_#ffc665]"></span>
+<span class="text-title-lg font-title-lg font-bold text-primary tracking-tight">GAJULA NUHITA</span>
+<span class="text-label-sm font-label-sm px-1.5 py-0.5 rounded bg-surface-variant text-on-surface-variant ml-1">// 2028</span>
 </a>
-</div>
+<!-- Desktop Navigation Links -->
+<nav id="desktop-nav" class="hidden lg:flex items-center gap-3 text-[13px]">
+<a class="nav-link text-primary font-bold border-b-2 border-primary pb-0.5 font-label-md transition-all duration-150 cursor-pointer" href="#home">Home</a>
+<a class="nav-link text-on-surface-variant font-label-md hover:text-primary transition-all duration-150 cursor-pointer" href="#about">About</a>
+<a class="nav-link text-on-surface-variant font-label-md hover:text-primary transition-all duration-150 cursor-pointer" href="#projects">Projects</a>
+<a class="nav-link text-on-surface-variant font-label-md hover:text-primary transition-all duration-150 cursor-pointer" href="#research">Research</a>
+<a class="nav-link text-on-surface-variant font-label-md hover:text-primary transition-all duration-150 cursor-pointer" href="#skills">Skills</a>
+<a class="nav-link text-on-surface-variant font-label-md hover:text-primary transition-all duration-150 cursor-pointer" href="#education">Education</a>
+<a class="nav-link text-on-surface-variant font-label-md hover:text-primary transition-all duration-150 cursor-pointer" href="#certs">Certifications</a>
+<a class="nav-link text-on-surface-variant font-label-md hover:text-primary transition-all duration-150 cursor-pointer" href="#resume">Resume</a>
+<a class="nav-link text-on-surface-variant font-label-md hover:text-primary transition-all duration-150 cursor-pointer" href="#contact">Contact</a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-3">
+<button id="btn-terminal" aria-label="Open Terminal" class="hidden sm:flex p-2 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-variant transition-colors duration-150 active:translate-y-0.5 cursor-pointer" type="button" title="Interactive Terminal (>_)">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</button>
+<button id="btn-palette" aria-label="Toggle Theme Palette" class="hidden sm:flex p-2 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-variant transition-colors duration-150 active:translate-y-0.5 cursor-pointer" type="button" title="Switch Color Palette">
+<span class="material-symbols-outlined text-[18px]">palette</span>
+</button>
+<button id="btn-resume" class="flex items-center gap-1.5 bg-primary-container text-on-primary-container px-4 py-1.5 rounded-full text-label-md font-label-md font-bold clay-pill active:translate-y-0.5 active:scale-95 transition-all cursor-pointer" type="button" title="View / Print Resume Dossier">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Resume.pdf</span>
+</button>
 </div>
 </div>
 </header>
-<!-- About Section -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto" id="about">
-<div class="grid md:grid-cols-2 gap-16 items-center">
-<div class="relative p-12 brush-border bg-white/50 backdrop-blur-sm">
-<!-- CS Decor -->
-<div class="absolute -top-6 -right-6 w-24 h-24 flex items-center justify-center">
-<span class="material-symbols-outlined text-[60px] text-primary/30 transform rotate-12" style="font-variation-settings: 'FILL' 0, 'wght' 200;">integration_instructions</span>
+<!-- Main Content Canvas -->
+<main class="max-w-6xl mx-auto px-4 sm:px-6 pt-28 space-y-16">
+<!-- 01: HOME / INTRODUCTION SECTION -->
+<section class="relative pt-4 scroll-mt-28" id="home">
+<!-- Top Retro Status Strip & Wizard Companion Sticker -->
+<div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+<!-- 84% Compiled Status Pill -->
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/40 clay-pill">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="text-label-sm font-label-sm text-primary tracking-widest">[████████░░] 84% COMPILED</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">// SYS_READY</span>
 </div>
-<h2 class="font-headline-lg text-headline-lg text-primary mb-6">About Me</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-6 italic">"3rd year CSE Student | JNTU Hyderabad. Building data-driven &amp; intelligent systems with expertise in Data Analytics and Computer Vision."</p>
-<p class="font-body-md text-body-md text-on-surface-variant mb-8">Passionate about Data Analytics, Machine Learning, YOLOv8, and Quantum Computing research. I navigate complex data and technology with analytical precision.</p>
-<div class="flex flex-wrap gap-4">
-<span class="px-4 py-2 bg-secondary/10 text-secondary rounded-full font-label-md text-sm">Data Analytics &amp; Insights</span>
-<span class="px-4 py-2 bg-secondary/10 text-secondary rounded-full font-label-md text-sm">Computer Vision</span>
-<span class="px-4 py-2 bg-secondary/10 text-secondary rounded-full font-label-md text-sm">Quantum Computing Research</span>
+<!-- Pixel Companion Dialogue Bubble Sticker -->
+<div class="flex items-center gap-2 transform -rotate-1 hover:rotate-0 transition-transform">
+<div class="w-8 h-8 rounded-lg bg-surface-variant border border-outline-variant flex items-center justify-center text-primary shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</div>
+<div class="bg-[#fdfbf7] text-[#171d13] px-3 py-1 rounded-full text-label-md font-label-md sticker-shadow border border-[#1a2015] flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Hi! Welcome to my lab ✦</span>
 </div>
 </div>
-<div class="relative group w-full flex justify-center items-center">
-<div class="absolute -inset-4 bg-secondary/5 rounded-2xl blur-2xl group-hover:bg-secondary/10 transition-all duration-700"></div>
-<img src="src/assets/about_photo.jpg" alt="Gajula Nuhita" class="relative z-10 w-full max-w-md h-auto rounded-2xl shadow-2xl" />
 </div>
-</div>
-</section>
-<!-- Projects Section -->
-<section class="py-24 bg-surface-container-low/50 relative" id="projects">
-<div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
-<div class="flex justify-between items-end mb-16">
-<div>
-<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Selected Projects</h2>
-<div class="h-1.5 w-32 bg-secondary mt-4 rounded-full"></div>
-</div>
-<span class="font-script text-2xl text-secondary mb-2 hidden md:block mt-6">navigating through innovation</span>
-</div>
-<div class="flex flex-col gap-12">
-<!-- Project 1: GrindRoom -->
-<div class="group relative overflow-hidden bg-white shadow-[0_10px_30px_rgba(0,123,167,0.05)] transition-all duration-500 hover:-translate-y-1 rounded-xl border-t-4 border-secondary">
-    <div class="p-8 md:p-10">
-        <div class="flex justify-between items-start mb-4">
-            <div>
-                <h3 class="font-headline-lg text-2xl md:text-3xl text-primary font-bold mb-2">GrindRoom: Real-Time Collaborative Study Platform</h3>
-            </div>
-            <a class="text-primary hover:text-secondary transition-colors" target="_blank" rel="noopener noreferrer" href="https://github.com/nuhita-netizen/Studybuddy">
-                <span class="material-symbols-outlined text-3xl">open_in_new</span>
-            </a>
-        </div>
-        <p class="font-body-lg text-on-surface-variant mb-6">A real-time collaborative study platform enabling synchronized pomodoro focus sessions for up to 3 concurrent users with built-in resource sharing features.</p>
-        
-        <div class="bg-surface-container-low p-6 rounded-lg mb-8 border border-outline-variant/30">
-            <p class="font-label-md text-primary mb-2 font-bold">Problem Statement:</p>
-            <p class="font-body-md text-on-surface-variant italic">"How can we create a distraction-free collaborative study environment for remote learners?"</p>
-        </div>
+<!-- Hero Sculpted Clay Tray -->
+<div class="relative bg-surface-container rounded-lg p-6 sm:p-10 clay-surface border border-surface-variant/40">
 
-        <div class="grid md:grid-cols-2 gap-8 mb-8">
-            <div>
-                <h4 class="font-headline-md text-lg text-primary flex items-center gap-2 mb-4 font-bold">
-                    <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-                    Key Features
-                </h4>
-                <ul class="space-y-3">
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Synchronized pomodoro focus sessions (up to 3 users)</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Real-time room & timer synchronization</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Multi-room management with capacity limits</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Built-in resource sharing (PDFs, notes, playlists)</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Automatic cleanup on disconnection</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Distraction-free, highly responsive UI</span>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-headline-md text-lg text-primary flex items-center gap-2 mb-4 font-bold">
-                    <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-                    What I Learned
-                </h4>
-                <ul class="space-y-3">
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Real-time event-driven architecture with WebSocket</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Multi-room state management and synchronization</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Full-stack deployment and production management</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Team collaboration and project leadership</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">UX design for distraction-free interfaces</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold rounded-full">Data Analytics</span>
-<span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">Node.js</span>
-<span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">Express</span>
-            <span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">Socket.IO</span>
-            <span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">WebSocket</span>
-            <span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">JavaScript</span>
-            <span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">Railway</span>
-            <span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">HTML/CSS</span>
-        </div>
-    </div>
+
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Avatar & Badge Area (Cols 1-5) -->
+<div class="lg:col-span-5 flex flex-col items-center text-center relative">
+<div class="relative w-64 h-64 sm:w-72 sm:h-72">
+<!-- Golden Ambient Halo Backlight -->
+<div class="absolute inset-0 rounded-full bg-primary-container/20 blur-2xl transform scale-95 pointer-events-none"></div>
+<!-- Outer Metallic Stamped Ring -->
+<div class="relative w-full h-full rounded-full p-2.5 chrome-hardware clay-surface flex items-center justify-center">
+<!-- Inner Gold Rim Container -->
+<div class="w-full h-full rounded-full overflow-hidden p-1 bg-surface-container-lowest border-2 border-primary">
+<img alt="Gajula Nuhita Portrait Avatar" class="w-full h-full object-cover rounded-full" src="/src/assets/profile.jpg" onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuBw6JlILMzEket6OEkyoqB20OpDOssGNxPOZJaeNmY259LViePWxAl7m6xogYuCXocvFxRLEp3xUOn96VRdhIW4FNr8evp-NYIf0dbIkKrcrYx9_-TFUpCwZL1OQK74Qi7mPjoEokY6DEuntUAxGGizTpJ0777xvt3XXzcWZb5KbgaKKc4oomi8jpgXovr-Ot_Z-7y68_MZIg8Dx4RGsPoxJAFrr-jZBTrdSzqkIAbXNjHLURE9JUU6DcbLcjS0Ah1Vgql1eTpIo4wT';"/>
 </div>
-
-<!-- Project 2: Vibe Spaciee -->
-<div class="group relative overflow-hidden bg-white shadow-[0_10px_30px_rgba(0,123,167,0.05)] transition-all duration-500 hover:-translate-y-1 rounded-xl border-t-4 border-secondary">
-    <div class="p-8 md:p-10">
-        <div class="flex justify-between items-start mb-4">
-            <div>
-                <h3 class="font-headline-lg text-2xl md:text-3xl text-primary font-bold mb-2">Vibe Spaciee: AI-Driven Room Organizer</h3>
-            </div>
-            <a class="text-primary hover:text-secondary transition-colors" target="_blank" rel="noopener noreferrer" href="https://github.com/nuhita-netizen/room-organizer">
-                <span class="material-symbols-outlined text-3xl">open_in_new</span>
-            </a>
-        </div>
-        <p class="font-body-lg text-on-surface-variant mb-6">An intelligent room organization application that uses computer vision to analyze space utilization and generate actionable recommendations for optimal furniture arrangements.</p>
-        
-        <div class="bg-surface-container-low p-6 rounded-lg mb-8 border border-outline-variant/30">
-            <p class="font-label-md text-primary mb-2 font-bold">Problem Statement:</p>
-            <p class="font-body-md text-on-surface-variant italic">"How can we leverage AI to help people organize their living spaces more efficiently?"</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8 mb-8">
-            <div>
-                <h4 class="font-headline-md text-lg text-primary flex items-center gap-2 mb-4 font-bold">
-                    <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-                    Key Features
-                </h4>
-                <ul class="space-y-3">
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Real-time furniture detection from image inputs</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Spatial analysis and layout optimization</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Clutter detection and recommendations</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Structured coordinate mapping for furniture placement</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Scalable REST API for concurrent uploads</span>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-headline-md text-lg text-primary flex items-center gap-2 mb-4 font-bold">
-                    <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-                    What I Learned
-                </h4>
-                <ul class="space-y-3">
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Advanced computer vision techniques (object detection, spatial analysis)</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Building high-performance REST APIs with FastAPI</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Modular architecture design for scalability</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Integration of ML models in production systems</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold rounded-full">Data Analytics</span>
-<span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">Python</span>
-<span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">YOLOv8</span>
-            <span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">Computer Vision</span>
-            <span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">FastAPI</span>
-            <span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">REST APIs</span>
-            <span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">Image Processing</span>
-        </div>
-    </div>
 </div>
-<!-- Project 3: BenefitBuddy -->
-<div class="group relative overflow-hidden bg-white shadow-[0_10px_30px_rgba(0,123,167,0.05)] transition-all duration-500 hover:-translate-y-1 rounded-xl border-t-4 border-secondary">
-    <div class="p-8 md:p-10">
-        <div class="flex justify-between items-start mb-4">
-            <div>
-                <h3 class="font-headline-lg text-2xl md:text-3xl text-primary font-bold mb-2">BenefitBuddy: AI-Powered Government Scheme Discovery &amp; Eligibility Platform</h3>
-                <p class="font-label-md text-secondary text-sm font-semibold mb-2">Team Project (Hackathon: UTKARSH 1.0 / IIT-B Honeywell Sustainability Hackathon) | 2026 – Present</p>
-            </div>
-            <a class="text-primary hover:text-secondary transition-colors" target="_blank" rel="noopener noreferrer" href="https://github.com/nuhita-netizen">
-                <span class="material-symbols-outlined text-3xl">open_in_new</span>
-            </a>
-        </div>
-        <p class="font-body-lg text-on-surface-variant mb-6">An AI-powered discovery platform designed to determine eligibility and match citizens with government welfare schemes and insurance programs using hybrid rule engines and machine learning.</p>
-
-        <div class="bg-surface-container-low p-6 rounded-lg mb-8 border border-outline-variant/30">
-            <p class="font-label-md text-primary mb-2 font-bold">Problem Statement:</p>
-            <p class="font-body-md text-on-surface-variant italic">"How can we simplify complex government scheme criteria and instantly connect eligible citizens to the right benefits?"</p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8 mb-8">
-            <div>
-                <h4 class="font-headline-md text-lg text-primary flex items-center gap-2 mb-4 font-bold">
-                    <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-                    Key Features &amp; Architecture
-                </h4>
-                <ul class="space-y-3">
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">End-to-end data architecture with deterministic rules engine for eligibility filtering</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">XGBoost model ranking schemes by relevance, benefit value, and applicant profile</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Dynamic data layer with nightly automated jobs validating scheme rules against official sources</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Unified eligibility logic integrating scheme matching with insurance comparison</span>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-headline-md text-lg text-primary flex items-center gap-2 mb-4 font-bold">
-                    <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
-                    What I Learned &amp; Impact
-                </h4>
-                <ul class="space-y-3">
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Hybrid rule-engine and Machine Learning recommendation pipelines</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Integrating LLM capabilities with Gemini API for contextual assistance</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
-                        <span class="font-body-md text-on-surface-variant">Automated data pipelines and scheduled verification workflows</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-secondary/10 text-secondary text-xs font-bold rounded-full">Hackathon Project</span>
-            <span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">Python</span>
-            <span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">FastAPI</span>
-            <span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">React</span>
-            <span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">XGBoost</span>
-            <span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">Gemini API</span>
-            <span class="px-3 py-1 bg-surface-variant text-on-surface-variant text-xs font-semibold rounded-full">SQLite / PostgreSQL</span>
-        </div>
-    </div>
+<!-- Die-Cut Floating Sticker Badge -->
+<div class="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#fdfbf7] text-[#171d13] px-3.5 py-1.5 rounded-full text-label-md font-label-md sticker-shadow border border-[#1a2015] transform rotate-1 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-on-primary-container">school</span>
+<span>CSE @ JNTU Hyderabad (2028)</span>
+</div>
+</div>
+<!-- Identity Pill Tag -->
+<div class="mt-6 inline-flex items-center gap-2 bg-surface-container-high px-4 py-1.5 rounded-full border border-outline-variant/30 clay-pill">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="text-label-md font-label-md text-on-surface">GAJULA NUHITA • DATA SCIENCE ENTHUSIAST</span>
+</div>
+</div>
+<!-- Hero Details & Narrative (Cols 6-12) -->
+<div class="lg:col-span-7 space-y-6">
+<div class="space-y-2.5">
+<div class="text-label-sm font-label-sm text-primary tracking-widest flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>01 // HOME / INTRODUCTION</span>
+</div>
+<h1 class="text-display-lg-mobile sm:text-display-lg font-display-lg text-on-surface tracking-tight leading-none">
+GAJULA <span class="text-primary italic font-serif">NUHITA</span>
+</h1>
+<div class="inline-flex items-center gap-2 bg-primary-container text-on-primary-container px-4 py-1.5 rounded-full text-title-md font-title-md font-bold clay-pill">
+<span class="material-symbols-outlined text-[18px]">analytics</span>
+<span>DATA SCIENCE ENTHUSIAST</span>
+</div>
+<p class="text-title-lg font-title-lg text-primary font-semibold tracking-wide">
+Tech Enthusiast · Quantum Computing Enthusiast
+</p>
+</div>
+<!-- Tagline Callout Box -->
+<div class="bg-surface-container-low p-5 rounded-md clay-sunken border border-outline-variant/30 text-on-surface-variant font-body-lg text-body-lg leading-relaxed italic">
+"Exploring Data, Intelligent Technologies &amp; Quantum Computing"
+</div>
+<!-- Micro Metrics Bento Badges -->
+<div id="metrics" class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1 scroll-mt-28">
+<div class="bg-surface-container-high p-3 rounded-md border border-outline-variant/30 clay-pill flex flex-col items-center text-center">
+<span class="text-headline-md font-headline-md text-primary leading-tight">5+</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-1">ML Benchmarks</span>
+</div>
+<div class="bg-surface-container-high p-3 rounded-md border border-outline-variant/30 clay-pill flex flex-col items-center text-center">
+<span class="text-headline-md font-headline-md text-primary leading-tight">16.84</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-1">t-Stat (p&lt;0.0001)</span>
+</div>
+<div class="bg-surface-container-high p-3 rounded-md border border-outline-variant/30 clay-pill flex flex-col items-center text-center">
+<span class="text-headline-md font-headline-md text-primary leading-tight">3</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-1">Capstones Shipped</span>
+</div>
+<div class="bg-surface-container-high p-3 rounded-md border border-outline-variant/30 clay-pill flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-[24px]">handshake</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant mt-1">Open For Collabs</span>
+</div>
+</div>
+<!-- Action Buttons Row -->
+<div class="flex flex-wrap items-center gap-3 pt-2">
+<a class="bg-primary-container text-on-primary-container hover:bg-primary-fixed-dim px-5 py-2.5 rounded-full text-title-md font-title-md font-bold clay-pill active:translate-y-0.5 transition-all flex items-center gap-2" href="#projects">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Explore Notebooks</span>
+</a>
+<a class="bg-surface-variant text-on-surface hover:text-primary px-5 py-2.5 rounded-full text-title-md font-title-md border border-outline-variant/50 clay-pill active:translate-y-0.5 transition-all flex items-center gap-2" href="https://github.com/nuhita-netizen" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">code</span>
+<span>View GitHub</span>
+</a>
+<a class="bg-[#fdfbf7] text-[#171d13] px-4 py-2 rounded-full text-label-md font-label-md sticker-shadow border border-[#1a2015] transform -rotate-1 hover:rotate-0 transition-transform flex items-center gap-1.5 ml-auto" href="mailto:nuhitag6@gmail.com">
+<span class="material-symbols-outlined text-[16px] text-on-primary-container">mail</span>
+<span>Ping In Lab</span>
+</a>
+</div>
 </div>
 </div>
 </div>
 </section>
-<!-- Certifications Section -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto" id="certs">
-<div class="text-center mb-16">
-<h2 class="font-headline-lg text-headline-lg text-primary">Academic &amp; Professional Honors</h2>
-<p class="font-body-md text-on-surface-variant mt-2 italic">A steady course through certified excellence</p>
+<!-- FLOATING CONNECTOR HARDWARE SPINE -->
+<div class="flex flex-col items-center justify-center my-6 relative z-10">
+<div class="w-1 h-8 bg-gradient-to-b from-primary to-outline-variant"></div>
+<div class="flex items-center gap-3 bg-surface-container-high border border-outline-variant/60 px-5 py-2 rounded-full clay-surface shadow-xl">
+<div class="w-3 h-3 rounded-full chrome-hardware"></div>
+<span class="text-label-sm font-label-sm text-primary tracking-widest uppercase">HARDWARE SPINE LINK // TELEMETRY &amp; RESEARCH REPOSITORY</span>
+<div class="w-3 h-3 rounded-full chrome-hardware"></div>
 </div>
-<div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-<div class="col-span-2 md:col-span-3 flex flex-col md:flex-row items-center justify-between p-6 bg-gradient-to-r from-secondary/10 via-white to-primary/5 shadow-md border-2 border-secondary rounded-xl transition-all hover:shadow-lg">
-<div class="flex items-center gap-5">
-<div class="w-16 h-16 rounded-full bg-secondary text-white flex items-center justify-center shadow-md flex-shrink-0">
-<span class="material-symbols-outlined text-3xl">analytics</span>
+<div class="w-1 h-8 bg-gradient-to-b from-outline-variant to-primary"></div>
 </div>
-<div>
-<div class="flex items-center gap-2">
-<span class="px-2.5 py-0.5 bg-secondary text-white text-[10px] font-bold uppercase tracking-wider rounded-full">Featured Certification</span>
-<span class="text-xs text-on-surface-variant font-semibold">Skill India Digital / NASSCOM</span>
-</div>
-<h4 class="font-headline-md text-xl text-primary font-bold mt-1">NASSCOM Certified: AI &amp; Data Analytics</h4>
-<p class="text-sm text-on-surface-variant mt-1">Demonstrated competency in exploratory data analysis (EDA), data-driven decision modeling, and analytical workflows.</p>
-</div>
-</div>
-</div>
-<div class="flex flex-col items-center p-8 bg-white shadow-sm border-b-2 border-primary-container hover:shadow-md transition-shadow">
-<span class="material-symbols-outlined text-secondary text-5xl mb-4">school</span>
-<h4 class="font-label-md text-primary text-center">Forage Virtual Internship</h4>
-<p class="text-xs text-on-surface-variant mt-1">Software Engineering &amp; Data Analytics</p>
-</div>
-<!-- Cert 3 -->
-<div class="flex flex-col items-center p-8 bg-white shadow-sm border-b-2 border-primary-container hover:shadow-md transition-shadow">
-<span class="material-symbols-outlined text-secondary text-5xl mb-4">military_tech</span>
-<h4 class="font-label-md text-primary text-center">Coursera Specialization</h4>
-<p class="text-xs text-on-surface-variant mt-1">C for Beginners</p>
-</div>
-<!-- Cert 4 -->
-<div class="flex flex-col items-center p-8 bg-white shadow-sm border-b-2 border-primary-container hover:shadow-md transition-shadow">
-<span class="material-symbols-outlined text-secondary text-5xl mb-4">workspace_premium</span>
-<h4 class="font-label-md text-primary text-center">Advanced Python</h4>
-<p class="text-xs text-on-surface-variant mt-1">Algorithm Design</p>
-</div>
-<!-- Cert 5 -->
-<div class="flex flex-col items-center p-8 bg-white shadow-sm border-b-2 border-primary-container hover:shadow-md transition-shadow">
-<span class="material-symbols-outlined text-secondary text-5xl mb-4">architecture</span>
-<h4 class="font-label-md text-primary text-center">Cloud Foundations</h4>
-<p class="text-xs text-on-surface-variant mt-1">System Infrastructure</p>
-</div>
-<!-- Cert 6 -->
-<div class="flex flex-col items-center p-8 bg-white shadow-sm border-b-2 border-primary-container hover:shadow-md transition-shadow">
-<span class="material-symbols-outlined text-secondary text-5xl mb-4">psychology</span>
-<h4 class="font-label-md text-primary text-center">Quantum Computing</h4>
-<p class="text-xs text-on-surface-variant mt-1">Research Fundamentals</p>
-</div>
-</div>
-</section>
 
-<!-- Contact Section -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto relative" id="contact">
-    <div class="text-center mb-16 relative z-10">
-        <h2 class="font-headline-lg text-headline-lg text-primary">Let's Connect &amp; Collaborate</h2>
-        <p class="font-body-md text-on-surface-variant mt-4 max-w-2xl mx-auto">Open to internship opportunities, collaborations, and discussions about AI-driven systems.</p>
-        <div class="h-1 w-16 bg-secondary mx-auto mt-6 rounded-full"></div>
+<!-- 02: ABOUT ME SECTION -->
+<section class="space-y-8 scroll-mt-28" id="about">
+  <div class="flex flex-wrap items-center justify-between gap-4 border-b border-outline-variant/20 pb-4">
+    <div>
+      <div class="flex items-center gap-2 text-label-sm font-label-sm text-primary tracking-widest uppercase">
+        <span class="material-symbols-outlined text-[16px]">person</span>
+        <span>02 // ABOUT ME</span>
+      </div>
+      <h2 class="text-headline-lg font-headline-lg text-on-surface">About Me</h2>
+      <p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Analytical precision meets curious exploration of intelligent systems and quantum frontiers.</p>
     </div>
-    
-    <div class="grid lg:grid-cols-2 gap-12 relative z-10">
-        <!-- Get in Touch (Left) -->
+    <div class="inline-flex items-center gap-1.5 bg-[#fdfbf7] text-[#171d13] px-3.5 py-1 rounded-full text-label-sm font-label-sm sticker-shadow border border-[#1a2015] transform -rotate-1">
+      <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+      <span>CANDIDATE DOSSIER</span>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    <!-- Narrative Tray (Cols 1-7) -->
+    <div class="lg:col-span-7 bg-surface-container rounded-2xl p-6 sm:p-8 clay-surface border border-outline-variant/30 space-y-4 flex flex-col justify-between">
+      <div class="space-y-4 text-on-surface-variant text-body-md leading-relaxed font-body-md">
+        <p>
+          I'm a Computer Science &amp; Engineering student at <span class="text-on-surface font-semibold underline decoration-primary decoration-2 underline-offset-4">JNTU Hyderabad (Graduation: 2028)</span> with an avid passion for Data Science, Machine Learning, and Quantum Computing.
+        </p>
+        <p>
+          My focus revolves around turning noisy, high-dimensional datasets into validated, actionable intelligence. Through end-to-end data pipelines, parametric hypothesis testing, and benchmarking regression models, I approach every challenge with mathematical rigor and architectural clarity.
+        </p>
+        <p>
+          Beyond classical machine learning and computer vision, I am deeply fascinated by <span class="text-primary font-bold">Quantum Computing</span>—exploring quantum algorithms, qubit superposition, and quantum-enhanced optimization frameworks for next-generation computing.
+        </p>
+      </div>
+
+      <div class="pt-4 border-t border-outline-variant/20 flex flex-wrap gap-2 text-label-sm font-label-sm">
+        <span class="bg-surface-container-high text-primary px-3 py-1 rounded-full border border-outline-variant/40 clay-pill">📍 Hyderabad, India</span>
+        <span class="bg-surface-container-high text-on-surface px-3 py-1 rounded-full border border-outline-variant/40 clay-pill">🎓 JNTUH CSE '28</span>
+        <span class="bg-surface-container-high text-primary px-3 py-1 rounded-full border border-outline-variant/40 clay-pill">📜 NASSCOM Certified</span>
+      </div>
+    </div>
+
+    <!-- 4 Pillars Bento (Cols 8-12) -->
+    <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+      <div class="bg-surface-container p-5 rounded-xl clay-surface border border-outline-variant/30 flex flex-col justify-between">
+        <span class="text-3xl mb-2">📊</span>
         <div>
-            <h3 class="font-headline-md text-headline-md text-primary mb-8">Get in Touch</h3>
-            <div class="space-y-4">
-                <!-- Email -->
-                <div class="flex items-center gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-outline-variant hover:border-secondary transition-colors group">
-                    <div class="w-12 h-12 bg-surface flex items-center justify-center rounded-lg text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
-                        <span class="material-symbols-outlined">mail</span>
-                    </div>
-                    <div>
-                        <p class="text-xs text-on-surface-variant font-label-md">Email</p>
-                        <p class="font-body-md font-semibold text-primary">nuhitag6@gmail.com</p>
-                    </div>
-                </div>
-                <!-- LinkedIn -->
-                <div class="flex items-center gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-outline-variant hover:border-secondary transition-colors group">
-                    <div class="w-12 h-12 bg-surface flex items-center justify-center rounded-lg text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
-                        <span class="material-symbols-outlined">work</span>
-                    </div>
-                    <div>
-                        <p class="text-xs text-on-surface-variant font-label-md">LinkedIn</p>
-                        <p class="font-body-md font-semibold text-primary">G Nuhita</p>
-                    </div>
-                </div>
-                <!-- GitHub -->
-                <div class="flex items-center gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-outline-variant hover:border-secondary transition-colors group">
-                    <div class="w-12 h-12 bg-surface flex items-center justify-center rounded-lg text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
-                        <span class="material-symbols-outlined">code</span>
-                    </div>
-                    <div>
-                        <p class="text-xs text-on-surface-variant font-label-md">GitHub</p>
-                        <p class="font-body-md font-semibold text-primary">nuhita-netizen</p>
-                    </div>
-                </div>
-                <!-- Phone -->
-                <div class="flex items-center gap-4 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-outline-variant hover:border-secondary transition-colors group">
-                    <div class="w-12 h-12 bg-surface flex items-center justify-center rounded-lg text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
-                        <span class="material-symbols-outlined">call</span>
-                    </div>
-                    <div>
-                        <p class="text-xs text-on-surface-variant font-label-md">Phone</p>
-                        <p class="font-body-md font-semibold text-primary">Available upon request</p>
-                    </div>
-                </div>
-            </div>
+          <h4 class="text-title-md font-title-md text-on-surface font-bold">Data Science &amp; EDA</h4>
+          <p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Hypothesis testing, outlier modeling, and statistical inference.</p>
         </div>
+      </div>
 
-        <!-- Form (Right) -->
-        <div class="bg-white rounded-2xl shadow-[0_10px_30px_rgba(0,123,167,0.05)] p-8 brush-border relative overflow-hidden">
-            <div class="absolute -top-10 -right-10 w-32 h-32 bg-secondary/5 rounded-full blur-2xl"></div>
-            
-            <h3 class="font-headline-md text-headline-md text-primary mb-8 relative z-10">Send a Message</h3>
-            <form action="https://formspree.io/f/https://formspree.io/f/xlgqrowo" method="POST" class="space-y-6 relative z-10">
-                <div class="grid grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-label-md text-on-surface-variant mb-1">Name</label>
-                        <input type="text" name="name" required placeholder="John Doe" class="w-full bg-surface border border-outline-variant rounded-lg px-4 py-2 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary text-primary font-body-md">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-label-md text-on-surface-variant mb-1">Email</label>
-                        <input type="email" name="email" required placeholder="john@example.com" class="w-full bg-surface border border-outline-variant rounded-lg px-4 py-2 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary text-primary font-body-md">
-                    </div>
-                </div>
-                <div>
-                    <label class="block text-xs font-label-md text-on-surface-variant mb-1">Subject</label>
-                    <input type="text" name="subject" required placeholder="Collaboration Opportunity" class="w-full bg-surface border border-outline-variant rounded-lg px-4 py-2 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary text-primary font-body-md">
-                </div>
-                <div>
-                    <label class="block text-xs font-label-md text-on-surface-variant mb-1">Message</label>
-                    <textarea rows="4" name="message" required placeholder="Hello, I'd like to discuss..." class="w-full bg-surface border border-outline-variant rounded-lg px-4 py-2 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary text-primary font-body-md resize-none"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-primary text-white font-label-md py-3 rounded-full hover:bg-primary-container transition-colors shadow-md flex justify-center items-center gap-2">
-                    Send Message
-                    <span class="material-symbols-outlined text-sm">send</span>
-                </button>
-            </form>
+      <div class="bg-surface-container p-5 rounded-xl clay-surface border border-outline-variant/30 flex flex-col justify-between">
+        <span class="text-3xl mb-2">⚛️</span>
+        <div>
+          <h4 class="text-title-md font-title-md text-primary font-bold">Quantum Computing</h4>
+          <p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Theoretical foundations, quantum algorithms &amp; logic gates.</p>
         </div>
+      </div>
+
+      <div class="bg-surface-container p-5 rounded-xl clay-surface border border-outline-variant/30 flex flex-col justify-between">
+        <span class="text-3xl mb-2">🤖</span>
+        <div>
+          <h4 class="text-title-md font-title-md text-on-surface font-bold">AI &amp; Vision</h4>
+          <p class="text-body-sm font-body-sm text-on-surface-variant mt-1">YOLOv8 spatial object detection, XGBoost, and recommendation systems.</p>
+        </div>
+      </div>
+
+      <div class="bg-surface-container p-5 rounded-xl clay-surface border border-outline-variant/30 flex flex-col justify-between">
+        <span class="text-3xl mb-2">⚡</span>
+        <div>
+          <h4 class="text-title-md font-title-md text-on-surface font-bold">Pipelines &amp; APIs</h4>
+          <p class="text-body-sm font-body-sm text-on-surface-variant mt-1">FastAPI, WebSockets, Python scripting, and reproducible ETL.</p>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant py-12 px-margin-desktop">
-<div class="max-w-max-width mx-auto flex flex-col md:flex-row justify-between items-center gap-gutter">
-<div class="flex flex-col items-center md:items-start">
-<span class="font-headline-md text-headline-md text-primary font-playfair font-bold">Gajula Nuhita</span>
-<p class="text-on-surface-variant font-body-md mt-2">@2026 Gajula Nuhita</p>
-</div>
-<div class="flex gap-8">
-<a class="text-on-surface-variant hover:text-secondary underline decoration-dotted transition-opacity opacity-80 hover:opacity-100" href="#">Portfolio</a>
-<a class="text-on-surface-variant hover:text-secondary underline decoration-dotted transition-opacity opacity-80 hover:opacity-100" href="#">Process</a>
-<a class="text-on-surface-variant hover:text-secondary underline decoration-dotted transition-opacity opacity-80 hover:opacity-100" href="#">Contact</a>
-</div>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full border border-outline flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
-<span class="material-symbols-outlined text-lg">public</span>
-</a>
-<a class="w-10 h-10 rounded-full border border-outline flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
-<span class="material-symbols-outlined text-lg">mail</span>
-</a>
-</div>
-</div>
-</footer>
-<!-- Micro-interactions Script -->
-<script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const splatters = document.querySelectorAll('.watercolor-wash');
-            
-            window.addEventListener('scroll', () => {
-                const scrolled = window.pageYOffset;
-                splatters.forEach((splatter, index) => {
-                    const speed = (index + 1) * 0.1;
-                    splatter.style.transform = `translateY(${scrolled * speed}px)`;
-                });
-            });
+<!-- 03: FEATURED PROJECTS SECTION -->
+<section class="space-y-8 scroll-mt-28" id="projects">
+  <!-- Section Heading Tray -->
+  <div class="flex flex-wrap items-center justify-between gap-4 border-b border-outline-variant/20 pb-4">
+    <div>
+      <div class="flex items-center gap-2 text-label-sm font-label-sm text-primary tracking-widest uppercase">
+        <span class="material-symbols-outlined text-[16px]">folder_special</span>
+        <span>03 // FEATURED PROJECTS</span>
+      </div>
+      <h2 class="text-headline-lg font-headline-lg text-on-surface">Featured Projects</h2>
+      <p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Full-stack data architectures, real-time collaboration, and applied machine learning systems.</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="text-label-sm font-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded-full border border-outline-variant/30">
+        4 CAPSTONES SHIPPED
+      </span>
+    </div>
+  </div>
 
-            // Smooth parallax for hero text
-            const heroText = document.querySelector('.font-playfair');
-            window.addEventListener('mousemove', (e) => {
-                const x = (window.innerWidth / 2 - e.pageX) / 50;
-                const y = (window.innerHeight / 2 - e.pageY) / 50;
-                if(heroText) {
-                    heroText.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
-                }
-            });
+  <!-- LEAD CAPSTONE PROJECT: World Happiness Report -->
+  <div class="bg-surface-container rounded-lg p-6 sm:p-8 clay-surface border-2 border-primary/40 relative overflow-hidden">
+    <div class="absolute top-4 right-4 bg-[#fdfbf7] text-[#171d13] px-3 py-1 rounded-full text-label-sm font-label-sm sticker-shadow border border-[#1a2015] transform rotate-2 flex items-center gap-1">
+      <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+      <span>CAPSTONE PRIMARY</span>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="lg:col-span-7 space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary text-label-sm font-label-sm">
+          <span class="material-symbols-outlined text-[14px]">query_stats</span>
+          <span>DATA SCIENCE CAPSTONE</span>
+        </div>
+        <h3 class="text-headline-md font-headline-md text-on-surface">
+          World Happiness Report: Data Science Capstone Project
+        </h3>
+        <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+          A five-week, end-to-end data science capstone analyzing the global determinants of national well-being using World Happiness Report data (2015–2022), covering data cleaning, exploratory analysis, statistical hypothesis testing, machine learning and strategic reporting.
+        </p>
+        <div class="bg-surface-container-low p-3.5 rounded-lg border border-outline-variant/30 clay-sunken">
+          <p class="text-xs font-bold text-primary mb-1">Problem Statement:</p>
+          <p class="text-xs text-on-surface-variant italic">"Which socio-economic factors most strongly influence national happiness, and can they be statistically validated and used to predict well-being scores?"</p>
+        </div>
+        <div class="flex flex-wrap gap-1.5 pt-1">
+          <span class="bg-surface-container-high text-primary text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30 font-bold">Python</span>
+          <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">Pandas</span>
+          <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">Scikit-Learn</span>
+          <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">SciPy</span>
+          <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">Matplotlib</span>
+          <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">Seaborn</span>
+        </div>
+        <div class="pt-2">
+          <a href="https://github.com/nuhita-netizen/Happiness-report" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary-container text-on-primary-container hover:bg-primary-fixed-dim px-5 py-2.5 rounded-full text-label-lg font-label-lg font-bold clay-pill active:translate-y-0.5 transition-all">
+            <span class="material-symbols-outlined text-[18px]">terminal</span>
+            <span>View Repository &amp; Code</span>
+          </a>
+        </div>
+      </div>
+      <div class="lg:col-span-5 bg-surface-container-lowest p-5 rounded-lg border border-outline-variant/40 clay-sunken space-y-3">
+        <span class="text-label-sm font-label-sm text-primary uppercase font-bold block">// Key Deliverables</span>
+        <ul class="space-y-2 text-xs text-on-surface-variant">
+          <li class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check_circle</span>
+            <span>Data cleaning pipeline with missing-value auditing and schema validation</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check_circle</span>
+            <span>Two-sample independent t-test with confidence intervals (t = 16.84, p &lt; 0.0001)</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check_circle</span>
+            <span>Comparative evaluation of 5 regression models benchmarking R² &amp; RMSE</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check_circle</span>
+            <span>Residual diagnostics and Random Forest feature importance analysis</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRIO PROJECT GRID CARDS -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- CARD 1: GrindRoom -->
+    <div class="bg-surface-container p-6 rounded-lg clay-surface border border-outline-variant/30 flex flex-col justify-between relative group hover:-translate-y-1 transition-transform duration-200">
+      <div class="absolute -top-3 right-6 w-6 h-6 rounded-full chrome-hardware flex items-center justify-center shadow">
+        <div class="w-2.5 h-2.5 rounded-full bg-surface-container"></div>
+      </div>
+      <div class="space-y-4">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-[20px]">groups</span>
+          <span class="text-label-sm font-label-sm text-primary tracking-wider">COLLABORATIVE TELEMETRY</span>
+        </div>
+        <h4 class="text-title-lg font-title-lg text-on-surface font-bold">GrindRoom</h4>
+        <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+          Real-time collaborative study platform featuring active focus telemetry, synchronized pomodoro timers, dynamic room clustering, and low-latency WebSockets.
+        </p>
+        <div class="flex flex-wrap gap-1.5 pt-2">
+          <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">React</span>
+          <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">FastAPI</span>
+          <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">WebSockets</span>
+          <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">Node.js</span>
+        </div>
+      </div>
+      <div class="pt-6 flex items-center justify-between border-t border-outline-variant/20 mt-4">
+        <span class="text-label-sm font-label-sm text-on-surface-variant">Live v1.4</span>
+        <a class="text-label-md font-label-md text-primary hover:underline flex items-center gap-1" href="https://github.com/nuhita-netizen/Studybuddy" target="_blank" rel="noopener noreferrer">
+          <span>View Source</span>
+          <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD 2: BenefitBuddy -->
+    <div class="bg-surface-container p-6 rounded-lg clay-surface border border-outline-variant/30 flex flex-col justify-between relative group hover:-translate-y-1 transition-transform duration-200">
+      <div class="absolute -top-3 right-6 w-6 h-6 rounded-full chrome-hardware flex items-center justify-center shadow">
+        <div class="w-2.5 h-2.5 rounded-full bg-surface-container"></div>
+      </div>
+      <div class="space-y-4">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-[20px]">account_balance</span>
+          <span class="text-label-sm font-label-sm text-primary tracking-wider">CIVIC AI &amp; NLP</span>
+        </div>
+        <h4 class="text-title-lg font-title-lg text-on-surface font-bold">BenefitBuddy</h4>
+        <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+          AI-powered citizen eligibility assistant for regional welfare schemes. Features multi-criteria rule filtering, automated document OCR extraction, and multilingual vernacular speech interfaces.
+        </p>
+        <div class="flex flex-wrap gap-1.5 pt-2">
+          <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">Python</span>
+          <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">XGBoost</span>
+          <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">Gemini API</span>
+          <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">FastAPI</span>
+        </div>
+      </div>
+      <div class="pt-6 flex items-center justify-between border-t border-outline-variant/20 mt-4">
+        <span class="text-label-sm font-label-sm text-on-surface-variant">Hackathon Project</span>
+        <a class="text-label-md font-label-md text-primary hover:underline flex items-center gap-1" href="https://github.com/nuhita-netizen" target="_blank" rel="noopener noreferrer">
+          <span>View Source</span>
+          <span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+        </a>
+      </div>
+    </div></div>
+</section>
+
+<!-- 04: RESEARCH & PUBLICATIONS SECTION -->
+<section class="space-y-8 scroll-mt-28" id="research">
+  <div class="flex flex-wrap items-center justify-between gap-4 border-b border-outline-variant/20 pb-4">
+    <div>
+      <div class="flex items-center gap-2 text-label-sm font-label-sm text-primary tracking-widest uppercase">
+        <span class="material-symbols-outlined text-[16px]">science</span>
+        <span>04 // RESEARCH &amp; PUBLICATIONS</span>
+      </div>
+      <h2 class="text-headline-lg font-headline-lg text-on-surface">Research &amp; Publications</h2>
+      <p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Theoretical explorations, quantum computing frontiers, and upcoming research publications.</p>
+    </div>
+    <div class="inline-flex items-center gap-1.5 bg-[#fdfbf7] text-[#171d13] px-3.5 py-1 rounded-full text-label-sm font-label-sm sticker-shadow border border-[#1a2015] transform rotate-1">
+      <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+      <span>INFERENCE DOSSIER</span>
+    </div>
+  </div>
+
+    <!-- Active Research Notice -->
+  <div class="bg-surface-container-low p-6 rounded-lg clay-sunken border border-outline-variant/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center border border-primary/30 flex-shrink-0">
+        <span class="material-symbols-outlined text-[20px]">hourglass_top</span>
+      </div>
+      <div>
+        <h4 class="text-title-md font-title-md font-bold text-on-surface">Pre-Publication &amp; Ongoing Investigations</h4>
+        <p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+          Academic research papers and empirical findings from ongoing capstones are currently in development. Formal manuscripts will be archived here upon completion and preprint release.
+        </p>
+      </div>
+    </div>
+    <span class="px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/40 text-label-sm font-label-sm text-primary flex-shrink-0">
+      IN PREPARATION
+    </span>
+  </div>
+
+  <!-- Theoretical Research Card: Quantum Computing -->
+  <div class="bg-surface-container rounded-lg p-6 sm:p-8 clay-surface border border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex items-start gap-5">
+      <div class="w-14 h-14 rounded-2xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary clay-pill flex-shrink-0 text-3xl">
+        ⚛️
+      </div>
+      <div class="space-y-1.5">
+        <div class="flex items-center gap-2">
+          <span class="px-2.5 py-0.5 bg-primary/10 border border-primary/30 text-primary text-label-sm font-label-sm font-bold uppercase rounded-full">Theoretical Research Focus</span>
+          <span class="text-label-sm font-label-sm text-on-surface-variant">Quantum Information Science</span>
+        </div>
+        <h4 class="text-title-lg font-title-lg text-on-surface font-bold">Quantum Computing &amp; Algorithmic Optimization</h4>
+        <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed max-w-3xl">
+          Exploring quantum circuit simulations, superposition, and quantum-enhanced heuristic optimization algorithms for complex multi-dimensional search spaces and computational bottlenecks in data science.
+        </p>
+      </div>
+    </div>
+    <div class="flex-shrink-0">
+      <span class="text-label-sm font-label-sm text-primary bg-surface-container-high px-4 py-2 rounded-full border border-outline-variant/40 clay-pill">ACTIVE STUDY</span>
+    </div>
+  </div>
+</section>
+
+<!-- 05: TECHNICAL SKILLS SECTION -->
+<section class="space-y-6 pt-4 scroll-mt-28" id="skills">
+<div class="text-center space-y-2">
+<span class="text-label-sm font-label-sm text-primary tracking-widest block">05 // TECHNICAL SKILLS</span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Technical Skills</h2>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-xl mx-auto">
+          Tactile stack modules calibrated for hypothesis validation, telemetry aggregation, and high-throughput model deployments.
+        </p>
+</div>
+<!-- App-style Squircle Keychain Dock Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 max-w-4xl mx-auto">
+<!-- Python -->
+<div class="bg-surface-container p-4 rounded-xl clay-surface flex flex-col items-center justify-center gap-2 group hover:-translate-y-1.5 transition-transform duration-150">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[26px]">terminal</span>
+</div>
+<span class="text-label-md font-label-md text-on-surface">Python</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Core / OOP</span>
+</div>
+<!-- Pandas -->
+<div class="bg-surface-container p-4 rounded-xl clay-surface flex flex-col items-center justify-center gap-2 group hover:-translate-y-1.5 transition-transform duration-150">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[26px]">table_chart</span>
+</div>
+<span class="text-label-md font-label-md text-on-surface">Pandas</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">EDA / Munging</span>
+</div>
+<!-- Scikit-Learn -->
+<div class="bg-surface-container p-4 rounded-xl clay-surface flex flex-col items-center justify-center gap-2 group hover:-translate-y-1.5 transition-transform duration-150">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[26px]">analytics</span>
+</div>
+<span class="text-label-md font-label-md text-on-surface">Scikit-Learn</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Inference</span>
+</div>
+<!-- PyTorch -->
+<div class="bg-surface-container p-4 rounded-xl clay-surface flex flex-col items-center justify-center gap-2 group hover:-translate-y-1.5 transition-transform duration-150">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[26px]">psychology</span>
+</div>
+<span class="text-label-md font-label-md text-on-surface">PyTorch</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Tensors / CV</span>
+</div>
+<!-- FastAPI -->
+<div class="bg-surface-container p-4 rounded-xl clay-surface flex flex-col items-center justify-center gap-2 group hover:-translate-y-1.5 transition-transform duration-150">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[26px]">bolt</span>
+</div>
+<span class="text-label-md font-label-md text-on-surface">FastAPI</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Async APIs</span>
+</div>
+<!-- SQL / Postgres -->
+<div class="bg-surface-container p-4 rounded-xl clay-surface flex flex-col items-center justify-center gap-2 group hover:-translate-y-1.5 transition-transform duration-150">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[26px]">database</span>
+</div>
+<span class="text-label-md font-label-md text-on-surface">PostgreSQL</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Queries / ETL</span>
+</div>
+<!-- React -->
+<div class="bg-surface-container p-4 rounded-xl clay-surface flex flex-col items-center justify-center gap-2 group hover:-translate-y-1.5 transition-transform duration-150">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[26px]">devices</span>
+</div>
+<span class="text-label-md font-label-md text-on-surface">React.js</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Frontend UI</span>
+</div>
+<!-- Docker -->
+<div class="bg-surface-container p-4 rounded-xl clay-surface flex flex-col items-center justify-center gap-2 group hover:-translate-y-1.5 transition-transform duration-150">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[26px]">token</span>
+</div>
+<span class="text-label-md font-label-md text-on-surface">Docker</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Packaging</span>
+</div>
+</div>
+</section>
+
+<!-- 06: EDUCATION & EXPERIENCE SECTION -->
+<section class="space-y-8 scroll-mt-28" id="education">
+  <div class="flex flex-wrap items-center justify-between gap-4 border-b border-outline-variant/20 pb-4">
+    <div>
+      <div class="flex items-center gap-2 text-label-sm font-label-sm text-primary tracking-widest uppercase">
+        <span class="material-symbols-outlined text-[16px]">school</span>
+        <span>06 // EDUCATION &amp; EXPERIENCE</span>
+      </div>
+      <h2 class="text-headline-lg font-headline-lg text-on-surface">Education &amp; Experience</h2>
+      <p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Rigorous theoretical computer science paired with real-world engineering projects.</p>
+    </div>
+    <div class="inline-flex items-center gap-1.5 bg-[#fdfbf7] text-[#171d13] px-3.5 py-1 rounded-full text-label-sm font-label-sm sticker-shadow border border-[#1a2015] transform rotate-1">
+      <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+      <span>CLASS OF 2028</span>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+    <!-- Education Column -->
+    <div class="bg-surface-container rounded-2xl p-6 sm:p-8 clay-surface border border-outline-variant/30 space-y-6 flex flex-col justify-between">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary clay-pill">
+            <span class="material-symbols-outlined text-[24px]">account_balance</span>
+          </div>
+          <div>
+            <span class="text-label-sm font-label-sm text-primary tracking-wider uppercase block">Undergraduate Degree</span>
+            <h3 class="text-title-lg font-title-lg text-on-surface font-bold">B.Tech in Computer Science &amp; Engineering</h3>
+          </div>
+        </div>
+
+        <div class="space-y-2 text-sm text-on-surface-variant font-body-md">
+          <p class="font-semibold text-on-surface">Jawaharlal Nehru Technological University (JNTU) Hyderabad</p>
+          <p class="text-xs font-mono text-primary flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[14px]">calendar_month</span>
+            <span>2024 – 2028 (Graduation Year: 2028)</span>
+          </p>
+          <p class="text-xs leading-relaxed pt-2">
+            Focusing on Data Science, Artificial Intelligence, Statistical Computing, Spatial Telemetry, and Quantum Computing research.
+          </p>
+        </div>
+
+        <div class="pt-4 mt-4 border-t border-outline-variant/20 space-y-2">
+          <span class="text-label-sm font-label-sm text-primary uppercase font-bold block">Relevant Disciplines:</span>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">Data Structures &amp; Algorithms</span>
+            <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">Database Management Systems</span>
+            <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">Operating Systems</span>
+            <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">Statistical Methods</span>
+            <span class="bg-surface-container-high text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full border border-outline-variant/30">Discrete Mathematics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-surface-container-low p-3 rounded-xl border border-outline-variant/30 clay-sunken flex items-center justify-between text-xs">
+        <span class="text-on-surface-variant">Academic Standing</span>
+        <span class="text-primary font-bold font-mono">CSE Undergraduate</span>
+      </div>
+    </div>
+
+    <!-- Experience Column -->
+    <div class="bg-surface-container rounded-2xl p-6 sm:p-8 clay-surface border border-outline-variant/30 space-y-4 flex flex-col justify-between">
+      <div class="space-y-4">
+        <div class="flex items-center gap-3 mb-2">
+          <div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary clay-pill">
+            <span class="material-symbols-outlined text-[24px]">work_history</span>
+          </div>
+          <div>
+            <span class="text-label-sm font-label-sm text-primary tracking-wider uppercase block">Practical Experience</span>
+            <h3 class="text-title-lg font-title-lg text-on-surface font-bold">Internships &amp; Leadership</h3>
+          </div>
+        </div>
+
+        <!-- Experience Item 1 -->
+        <div class="bg-surface-container-high p-4 rounded-xl border border-outline-variant/30 space-y-1.5">
+          <div class="flex justify-between items-start">
+            <h4 class="font-bold text-on-surface text-sm">Data Analytics Intern</h4>
+            <span class="text-[11px] font-mono text-primary bg-primary/10 px-2 py-0.5 rounded-full border border-primary/20">YUVA Internship</span>
+          </div>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Delivered a 5-week statistical inference capstone analyzing multi-year determinants of global well-being. Built reproducible cleaning pipelines, conducted two-sample t-tests, and benchmarked 5 regression architectures.
+          </p>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="bg-surface-container-high p-4 rounded-xl border border-outline-variant/30 space-y-1.5">
+          <div class="flex justify-between items-start">
+            <h4 class="font-bold text-on-surface text-sm">Project Leader — GrindRoom</h4>
+            <span class="text-[11px] font-mono text-primary bg-primary/10 px-2 py-0.5 rounded-full border border-primary/20">Feb 2026 – June 2026</span>
+          </div>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Led development of a real-time collaborative focus platform with synchronized pomodoro telemetry via WebSockets, multi-room state management, and cloud deployment.
+          </p>
+        </div>
+
+        <!-- Experience Item 3 -->
+        <div class="bg-surface-container-high p-4 rounded-xl border border-outline-variant/30 space-y-1.5">
+          <div class="flex justify-between items-start">
+            <h4 class="font-bold text-on-surface text-sm">Software Engineering &amp; Data Telemetry</h4>
+            <span class="text-[11px] font-mono text-primary bg-primary/10 px-2 py-0.5 rounded-full border border-primary/20">Forage Experience</span>
+          </div>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            Simulated high-frequency trading data aggregation, interface visualization, and client-server telemetry validation.
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-2 border-t border-outline-variant/20 flex items-center justify-between text-xs text-on-surface-variant">
+        <span>Hands-On Engineering Practice</span>
+        <span class="text-primary font-bold">100% Shipped</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07: CERTIFICATIONS & ACHIEVEMENTS SECTION -->
+<section class="space-y-8 scroll-mt-28" id="certs">
+  <div class="flex flex-wrap items-center justify-between gap-4 border-b border-outline-variant/20 pb-4">
+    <div>
+      <div class="flex items-center gap-2 text-label-sm font-label-sm text-primary tracking-widest uppercase">
+        <span class="material-symbols-outlined text-[16px]">military_tech</span>
+        <span>07 // CERTIFICATIONS &amp; ACHIEVEMENTS</span>
+      </div>
+      <h2 class="text-headline-lg font-headline-lg text-on-surface">Certifications &amp; Achievements</h2>
+      <p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Verified industry credentials in Data Science, Machine Learning, and Computing.</p>
+    </div>
+    <div class="inline-flex items-center gap-1.5 bg-[#fdfbf7] text-[#171d13] px-3.5 py-1 rounded-full text-label-sm font-label-sm sticker-shadow border border-[#1a2015] transform rotate-1">
+      <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+      <span>VERIFIED CREDENTIALS</span>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Featured Cert: NASSCOM AI & Data Analytics -->
+    <div class="md:col-span-3 bg-surface-container rounded-lg p-6 sm:p-8 clay-surface border-2 border-primary/50 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5 text-center sm:text-left">
+        <div class="w-16 h-16 rounded-2xl bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg flex-shrink-0 clay-pill">
+          <span class="material-symbols-outlined text-[34px]">analytics</span>
+        </div>
+        <div>
+          <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-1.5">
+            <span class="px-2.5 py-0.5 bg-primary-container text-on-primary-container text-label-sm font-label-sm font-bold uppercase rounded-full">Featured Certification</span>
+            <span class="text-label-sm font-label-sm text-primary font-semibold">Skill India Digital / NASSCOM</span>
+          </div>
+          <h3 class="text-headline-md font-headline-md text-on-surface">NASSCOM Certified: AI &amp; Data Analytics</h3>
+          <p class="text-body-sm font-body-sm text-on-surface-variant mt-1 max-w-2xl leading-relaxed">
+            Demonstrated mastery in end-to-end exploratory data analysis (EDA), data cleaning pipelines, parametric statistical hypothesis testing, and machine learning decision workflows.
+          </p>
+        </div>
+      </div>
+      <div class="flex-shrink-0">
+        <div class="bg-surface-container-high px-4 py-2 rounded-full border border-outline-variant/40 clay-pill text-label-sm font-label-sm text-primary">
+          PROFESSIONAL ACCREDITATION
+        </div>
+      </div>
+    </div>
+
+    <!-- Cert 2: Coursera Specialization (C & Python) -->
+    <div class="bg-surface-container p-6 rounded-lg clay-surface border border-outline-variant/30 flex flex-col justify-between relative group hover:-translate-y-1 transition-transform duration-200">
+      <div class="absolute -top-3 right-6 w-6 h-6 rounded-full chrome-hardware flex items-center justify-center shadow">
+        <div class="w-2.5 h-2.5 rounded-full bg-surface-container"></div>
+      </div>
+      <div class="space-y-3">
+        <div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary clay-pill">
+          <span class="material-symbols-outlined text-[24px]">school</span>
+        </div>
+        <span class="text-label-sm font-label-sm text-primary tracking-wider uppercase block">Coursera Specialization</span>
+        <h4 class="text-title-lg font-title-lg text-on-surface font-bold">C for Beginners &amp; Programming Foundations</h4>
+        <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">Core programming paradigms, low-level memory allocation, data structures, and algorithmic execution.</p>
+      </div>
+      <div class="pt-4 border-t border-outline-variant/20 mt-4 flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant">
+        <span>Verified Certificate</span>
+        <span class="text-primary font-bold">Completed</span>
+      </div>
+    </div>
+
+    <!-- Cert 3: YUVA Data Analytics Internship Capstone -->
+    <div class="bg-surface-container p-6 rounded-lg clay-surface border border-outline-variant/30 flex flex-col justify-between relative group hover:-translate-y-1 transition-transform duration-200">
+      <div class="absolute -top-3 right-6 w-6 h-6 rounded-full chrome-hardware flex items-center justify-center shadow">
+        <div class="w-2.5 h-2.5 rounded-full bg-surface-container"></div>
+      </div>
+      <div class="space-y-3">
+        <div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary clay-pill">
+          <span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+        </div>
+        <span class="text-label-sm font-label-sm text-primary tracking-wider uppercase block">Industry Internship</span>
+        <h4 class="text-title-lg font-title-lg text-on-surface font-bold">YUVA Data Analytics Capstone</h4>
+        <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">End-to-end data lifecycle, multi-year statistical cross-tabulation, hypothesis testing, and capstone publication.</p>
+      </div>
+      <div class="pt-4 border-t border-outline-variant/20 mt-4 flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant">
+        <span>5-Week Capstone</span>
+        <span class="text-primary font-bold">Completed</span>
+      </div>
+    </div>
+
+    <!-- Cert 4: Forage Virtual Internship -->
+    <div class="bg-surface-container p-6 rounded-lg clay-surface border border-outline-variant/30 flex flex-col justify-between relative group hover:-translate-y-1 transition-transform duration-200">
+      <div class="absolute -top-3 right-6 w-6 h-6 rounded-full chrome-hardware flex items-center justify-center shadow">
+        <div class="w-2.5 h-2.5 rounded-full bg-surface-container"></div>
+      </div>
+      <div class="space-y-3">
+        <div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary clay-pill">
+          <span class="material-symbols-outlined text-[24px]">integration_instructions</span>
+        </div>
+        <span class="text-label-sm font-label-sm text-primary tracking-wider uppercase block">Practical Simulation</span>
+        <h4 class="text-title-lg font-title-lg text-on-surface font-bold">Forage Virtual Internship</h4>
+        <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">Software engineering workflows, API integration, data telemetry validation, and architecture testing.</p>
+      </div>
+      <div class="pt-4 border-t border-outline-variant/20 mt-4 flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant">
+        <span>Virtual Experience</span>
+        <span class="text-primary font-bold">Certified</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08: RESUME SECTION -->
+<section class="space-y-8 scroll-mt-28" id="resume">
+  <div class="flex flex-wrap items-center justify-between gap-4 border-b border-outline-variant/20 pb-4">
+    <div>
+      <div class="flex items-center gap-2 text-label-sm font-label-sm text-primary tracking-widest uppercase">
+        <span class="material-symbols-outlined text-[16px]">description</span>
+        <span>08 // RESUME</span>
+      </div>
+      <h2 class="text-headline-lg font-headline-lg text-on-surface">Resume</h2>
+      <p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Verified academic, research, and project portfolio summary ready for download.</p>
+    </div>
+    <div class="inline-flex items-center gap-1.5 bg-[#fdfbf7] text-[#171d13] px-3.5 py-1 rounded-full text-label-sm font-label-sm sticker-shadow border border-[#1a2015] transform -rotate-1">
+      <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+      <span>UPDATED FOR 2028</span>
+    </div>
+  </div>
+
+  <div class="bg-surface-container rounded-2xl p-6 sm:p-10 clay-surface border-2 border-primary/50 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+    <div class="space-y-4 max-w-2xl text-center md:text-left">
+      <div class="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 px-3 py-1 rounded-full text-label-sm font-label-sm text-primary">
+        <span class="material-symbols-outlined text-[15px]">badge</span>
+        <span>GAJULA NUHITA • CSE (CLASS OF 2028)</span>
+      </div>
+      <h3 class="text-headline-md font-headline-md text-on-surface font-bold">
+        Complete Academic &amp; Research Curriculum Vitae
+      </h3>
+      <p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+        Featuring detailed coursework at JNTU Hyderabad, NASSCOM certifications, World Happiness Report statistical inference capstone, GrindRoom WebSockets architecture, and technical skill matrices.
+      </p>
+      <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 pt-1 text-xs">
+        <span class="bg-surface-container-high text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">Data Science</span>
+        <span class="bg-surface-container-high text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">Machine Learning</span>
+        <span class="bg-surface-container-high text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">Quantum Computing</span>
+        <span class="bg-surface-container-high text-on-surface px-3 py-1 rounded-full border border-outline-variant/30">Python &amp; SQL</span>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:flex-row md:flex-col gap-3 w-full md:w-auto flex-shrink-0">
+      <button onclick="openResumeModal()" class="bg-primary-container text-on-primary-container hover:bg-primary-fixed-dim px-6 py-3.5 rounded-full text-title-md font-title-md font-bold clay-pill active:translate-y-0.5 transition-all flex items-center justify-center gap-2 shadow-lg cursor-pointer">
+        <span class="material-symbols-outlined text-[20px]">visibility</span>
+        <span>View Dossier</span>
+      </button>
+      <button onclick="window.print()" class="bg-surface-variant text-on-surface hover:text-primary px-6 py-3.5 rounded-full text-title-md font-title-md font-bold border border-outline-variant/50 clay-pill active:translate-y-0.5 transition-all flex items-center justify-center gap-2 cursor-pointer">
+        <span class="material-symbols-outlined text-[20px]">download</span>
+        <span>Print / Save PDF</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- 09: CONTACT ME SECTION -->
+<section class="space-y-8 scroll-mt-28" id="contact">
+  <div class="text-center space-y-2 relative z-10 max-w-2xl mx-auto">
+    <div class="inline-flex items-center gap-2 text-label-sm font-label-sm text-primary tracking-widest uppercase">
+      <span class="material-symbols-outlined text-[16px]">connect_without_contact</span>
+      <span>09 // CONTACT ME</span>
+    </div>
+    <h2 class="text-headline-lg font-headline-lg text-on-surface">Contact Me</h2>
+    <p class="text-body-md font-body-md text-on-surface-variant">
+      Open to internship opportunities, research collaborations, data analytics discussions, and intelligent AI system architecture.
+    </p>
+    <div class="w-16 h-1 bg-primary-container mx-auto rounded-full mt-3"></div>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    <!-- Get in Touch Channel Cards (Cols 1-5) -->
+    <div class="lg:col-span-5 space-y-4">
+      <h3 class="text-headline-md font-headline-md text-on-surface">Get in Touch</h3>
+      
+      <!-- Email Card -->
+      <a href="mailto:nuhitag6@gmail.com" class="bg-surface-container p-4 rounded-xl clay-surface border border-outline-variant/30 flex items-center gap-4 group hover:-translate-y-1 transition-all duration-200">
+        <div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors clay-pill flex-shrink-0">
+          <span class="material-symbols-outlined text-[24px]">mail</span>
+        </div>
+        <div class="overflow-hidden">
+          <p class="text-label-sm font-label-sm text-on-surface-variant">Email</p>
+          <p class="text-title-md font-title-md text-primary font-bold truncate">nuhitag6@gmail.com</p>
+        </div>
+        <span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-primary ml-auto transition-colors">arrow_outward</span>
+      </a>
+
+      <!-- LinkedIn Card -->
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="bg-surface-container p-4 rounded-xl clay-surface border border-outline-variant/30 flex items-center gap-4 group hover:-translate-y-1 transition-all duration-200">
+        <div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors clay-pill flex-shrink-0">
+          <span class="material-symbols-outlined text-[24px]">work</span>
+        </div>
+        <div>
+          <p class="text-label-sm font-label-sm text-on-surface-variant">LinkedIn</p>
+          <p class="text-title-md font-title-md text-on-surface font-bold group-hover:text-primary transition-colors">G Nuhita</p>
+        </div>
+        <span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-primary ml-auto transition-colors">arrow_outward</span>
+      </a>
+
+      <!-- GitHub Card -->
+      <a href="https://github.com/nuhita-netizen" target="_blank" rel="noopener noreferrer" class="bg-surface-container p-4 rounded-xl clay-surface border border-outline-variant/30 flex items-center gap-4 group hover:-translate-y-1 transition-all duration-200">
+        <div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors clay-pill flex-shrink-0">
+          <span class="material-symbols-outlined text-[24px]">code</span>
+        </div>
+        <div>
+          <p class="text-label-sm font-label-sm text-on-surface-variant">GitHub</p>
+          <p class="text-title-md font-title-md text-on-surface font-bold group-hover:text-primary transition-colors">nuhita-netizen</p>
+        </div>
+        <span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-primary ml-auto transition-colors">arrow_outward</span>
+      </a>
+
+      <!-- Location / Academic Status Card -->
+      <div class="bg-surface-container p-4 rounded-xl clay-surface border border-outline-variant/30 flex items-center gap-4">
+        <div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary clay-pill flex-shrink-0">
+          <span class="material-symbols-outlined text-[24px]">location_on</span>
+        </div>
+        <div>
+          <p class="text-label-sm font-label-sm text-on-surface-variant">Location &amp; University</p>
+          <p class="text-title-md font-title-md text-on-surface font-bold">Hyderabad, India • JNTUH (2028)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Working Contact Form (Cols 6-12) -->
+    <div class="lg:col-span-7 bg-surface-container rounded-2xl p-6 sm:p-8 clay-surface border-2 border-primary/40 relative overflow-hidden">
+      <div class="absolute -top-4 right-8 z-20 flex flex-col items-center">
+        <div class="w-8 h-10 rounded-full chrome-hardware flex items-center justify-center shadow">
+          <div class="w-3 h-6 rounded-full bg-surface-container"></div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2 mb-6">
+        <span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+        <h3 class="text-headline-md font-headline-md text-on-surface">Send a Message</h3>
+      </div>
+
+      <form action="https://formspree.io/f/xlgqrowo" method="POST" class="space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5 uppercase tracking-wider">Your Name</label>
+            <input type="text" name="name" required placeholder="John Doe" class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg px-4 py-2.5 text-on-surface font-body-md text-sm clay-sunken focus:outline-none focus:border-primary transition-colors" />
+          </div>
+          <div>
+            <label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5 uppercase tracking-wider">Email Address</label>
+            <input type="email" name="email" required placeholder="john@example.com" class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg px-4 py-2.5 text-on-surface font-body-md text-sm clay-sunken focus:outline-none focus:border-primary transition-colors" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5 uppercase tracking-wider">Subject</label>
+          <input type="text" name="subject" required placeholder="Research Collaboration / Project Discussion" class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg px-4 py-2.5 text-on-surface font-body-md text-sm clay-sunken focus:outline-none focus:border-primary transition-colors" />
+        </div>
+
+        <div>
+          <label class="block text-label-sm font-label-sm text-on-surface-variant mb-1.5 uppercase tracking-wider">Message</label>
+          <textarea rows="4" name="message" required placeholder="Hi Nuhita, I'd like to collaborate on..." class="w-full bg-surface-container-low border border-outline-variant/40 rounded-lg px-4 py-2.5 text-on-surface font-body-md text-sm clay-sunken focus:outline-none focus:border-primary transition-colors resize-none"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container font-bold py-3.5 px-6 rounded-full text-label-lg font-label-lg clay-pill active:translate-y-0.5 transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg">
+          <span>Send Message</span>
+          <span class="material-symbols-outlined text-[18px]">send</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer class="pt-8 pb-12 text-center space-y-4 border-t border-outline-variant/20">
+<div class="inline-flex items-center gap-2 bg-[#fdfbf7] text-[#171d13] px-4 py-1.5 rounded-full text-label-md font-label-md sticker-shadow border border-[#1a2015] transform -rotate-1">
+<span class="material-symbols-outlined text-[16px] text-on-primary-container">school</span>
+<span>Graduation Year: 2028</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+        Gajula Nuhita • Computer Science &amp; Engineering, JNTU Hyderabad
+      </p>
+</footer>
+</main>
+<!-- SHARED COMPONENT: BottomNavBar (Fixed Label & Icon Nav Cluster) -->
+<!-- Prohibited on web header if top nav covers it, but provided per schema for mobile & responsive quick-access -->
+<nav class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-2 px-4 py-2 bg-surface-container-high rounded-full shadow-lg outline outline-1 outline-outline-variant/40 backdrop-blur-md">
+<!-- Item 1: Overview -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1.5 active:scale-95 transition-transform duration-100" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="dashboard">dashboard</span>
+<span class="text-label-sm font-label-sm">Overview</span>
+</a>
+<!-- Item 2: Analytics -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant rounded-full px-3 py-1.5 hover:bg-surface-container-highest transition-colors duration-150 active:scale-95" href="#research">
+<span class="material-symbols-outlined text-[20px]" data-icon="analytics">analytics</span>
+<span class="text-label-sm font-label-sm">Analytics</span>
+</a>
+<!-- Item 3: Stack -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant rounded-full px-3 py-1.5 hover:bg-surface-container-highest transition-colors duration-150 active:scale-95" href="#projects">
+<span class="material-symbols-outlined text-[20px]" data-icon="layers">layers</span>
+<span class="text-label-sm font-label-sm">Stack</span>
+</a>
+<!-- Item 4: Keychain -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant rounded-full px-3 py-1.5 hover:bg-surface-container-highest transition-colors duration-150 active:scale-95" href="#keychain">
+<span class="material-symbols-outlined text-[20px]" data-icon="token">token</span>
+<span class="text-label-sm font-label-sm">Keychain</span>
+</a>
+<!-- Item 5: Terminal -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant rounded-full px-3 py-1.5 hover:bg-surface-container-highest transition-colors duration-150 active:scale-95" href="#terminal">
+<span class="material-symbols-outlined text-[20px]" data-icon="terminal">terminal</span>
+<span class="text-label-sm font-label-sm">Terminal</span>
+</a>
+</nav>
+<!-- Floating Palette Toast Notification -->
+<div id="palette-toast" class="fixed top-20 right-6 z-[90] bg-[#fdfbf7] text-[#171d13] px-4 py-2 rounded-full text-xs font-mono font-bold sticker-shadow border border-[#1a2015] transform translate-y-[-20px] opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-2">
+  <span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+  <span id="palette-toast-text">Palette: Amber Honey ✦</span>
+</div>
+
+<!-- Interactive Terminal Modal -->
+<div id="terminal-modal" class="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+  <div class="w-full max-w-2xl bg-[#0d140a] border-2 border-primary/50 rounded-2xl shadow-2xl overflow-hidden font-mono text-sm clay-surface">
+    <!-- Terminal Header Bar -->
+    <div class="bg-surface-container-high px-4 py-2.5 border-b border-outline-variant/30 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="w-3 h-3 rounded-full bg-error inline-block cursor-pointer hover:opacity-80" onclick="closeTerminal()" title="Close Terminal"></span>
+        <span class="w-3 h-3 rounded-full bg-primary inline-block"></span>
+        <span class="w-3 h-3 rounded-full bg-tertiary inline-block"></span>
+        <span class="text-xs text-on-surface-variant ml-2 font-mono">nuhita@research-lab:~ (bash)</span>
+      </div>
+      <button onclick="closeTerminal()" class="text-on-surface-variant hover:text-primary text-sm font-bold px-2 py-0.5 rounded hover:bg-surface-variant transition-colors cursor-pointer">✕</button>
+    </div>
+    <!-- Terminal Screen Body -->
+    <div id="terminal-body" class="p-4 max-h-[380px] overflow-y-auto space-y-2 text-on-surface text-xs leading-relaxed select-text font-mono">
+      <p class="text-primary font-bold">╔══════════════════════════════════════════════════════════════╗</p>
+      <p class="text-primary font-bold">║  GAJULA NUHITA // DATA SCIENCE &amp; APPLIED ML LAB [v2.8]       ║</p>
+      <p class="text-primary font-bold">║  Type 'help' for command list, or tap the quick pills below. ║</p>
+      <p class="text-primary font-bold">╚══════════════════════════════════════════════════════════════╝</p>
+      <p class="text-on-surface-variant">System active: CSE @ JNTU Hyderabad (Class of 2028)</p>
+      <div id="terminal-history" class="space-y-1.5"></div>
+      <div class="flex items-center gap-2 pt-1">
+        <span class="text-primary font-bold">nuhita@lab:~$</span>
+        <input type="text" id="terminal-input" class="flex-1 bg-transparent border-none outline-none text-on-surface font-mono text-xs p-0 focus:ring-0 focus:outline-none" placeholder="Type command here (e.g. help, projects, stats)..." autofocus />
+      </div>
+    </div>
+    <!-- Quick Commands Bar -->
+    <div class="bg-surface-container-low px-4 py-2 border-t border-outline-variant/30 flex flex-wrap items-center gap-1.5 text-[11px]">
+      <span class="text-on-surface-variant text-[10px] mr-1">QUICK:</span>
+      <button onclick="runCommand('help')" class="px-2 py-0.5 rounded bg-surface-variant hover:bg-primary-container hover:text-on-primary-container text-primary border border-outline-variant/30 transition-all cursor-pointer">help</button>
+      <button onclick="runCommand('projects')" class="px-2 py-0.5 rounded bg-surface-variant hover:bg-primary-container hover:text-on-primary-container text-on-surface border border-outline-variant/30 transition-all cursor-pointer">projects</button>
+      <button onclick="runCommand('stats')" class="px-2 py-0.5 rounded bg-surface-variant hover:bg-primary-container hover:text-on-primary-container text-on-surface border border-outline-variant/30 transition-all cursor-pointer">stats</button>
+      <button onclick="runCommand('skills')" class="px-2 py-0.5 rounded bg-surface-variant hover:bg-primary-container hover:text-on-primary-container text-on-surface border border-outline-variant/30 transition-all cursor-pointer">skills</button>
+      <button onclick="runCommand('about')" class="px-2 py-0.5 rounded bg-surface-variant hover:bg-primary-container hover:text-on-primary-container text-on-surface border border-outline-variant/30 transition-all cursor-pointer">about</button>
+      <button onclick="runCommand('contact')" class="px-2 py-0.5 rounded bg-surface-variant hover:bg-primary-container hover:text-on-primary-container text-on-surface border border-outline-variant/30 transition-all cursor-pointer">contact</button>
+      <button onclick="runCommand('clear')" class="px-2 py-0.5 rounded bg-surface-variant hover:bg-error hover:text-white text-on-surface-variant border border-outline-variant/30 transition-all ml-auto cursor-pointer">clear</button>
+    </div>
+  </div>
+</div>
+
+<!-- Resume Dossier Modal -->
+<div id="resume-modal" class="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+  <div class="w-full max-w-3xl max-h-[90vh] bg-surface-container rounded-2xl border-2 border-primary/50 shadow-2xl overflow-y-auto p-6 sm:p-8 clay-surface relative space-y-6">
+    <div class="flex items-start justify-between border-b border-outline-variant/30 pb-4">
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+          <span class="text-xs font-mono font-bold text-primary tracking-widest uppercase">ACADEMIC &amp; RESEARCH DOSSIER</span>
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-bold font-display-lg text-on-surface">Gajula Nuhita</h3>
+        <p class="text-sm font-mono text-primary mt-0.5">Data Analytics &amp; CS Researcher • Class of 2028 (JNTU Hyderabad)</p>
+      </div>
+      <button onclick="closeResumeModal()" class="w-8 h-8 rounded-full bg-surface-variant hover:bg-error hover:text-white flex items-center justify-center text-on-surface transition-colors cursor-pointer">✕</button>
+    </div>
+
+    <!-- Education & Bio -->
+    <div class="bg-surface-container-low p-4 rounded-xl border border-outline-variant/30 clay-sunken space-y-2 text-sm text-on-surface-variant">
+      <div class="flex justify-between items-center text-on-surface font-semibold">
+        <span>B.Tech in Computer Science &amp; Engineering</span>
+        <span class="text-xs text-primary font-mono font-bold bg-primary/10 px-2.5 py-0.5 rounded-full border border-primary/30">Graduation: 2028</span>
+      </div>
+      <p class="text-xs text-primary font-medium">Jawaharlal Nehru Technological University (JNTU) Hyderabad</p>
+      <p class="text-xs leading-relaxed">Specializing in exploratory data analysis, inferential hypothesis testing, machine learning benchmarking, and spatial telemetry systems.</p>
+    </div>
+
+    <!-- Certifications -->
+    <div class="space-y-2">
+      <h4 class="text-xs font-mono font-bold text-primary tracking-wider uppercase">CERTIFICATIONS &amp; HONORS</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+        <div class="bg-surface-container-high p-3 rounded-lg border border-outline-variant/30 clay-pill">
+          <p class="font-bold text-on-surface">NASSCOM Certified Professional</p>
+          <p class="text-on-surface-variant mt-0.5">Artificial Intelligence &amp; Data Analytics</p>
+        </div>
+        <div class="bg-surface-container-high p-3 rounded-lg border border-outline-variant/30 clay-pill">
+          <p class="font-bold text-on-surface">Coursera Specialization</p>
+          <p class="text-on-surface-variant mt-0.5">C for Beginners Certification</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Selected Capstones -->
+    <div class="space-y-2">
+      <h4 class="text-xs font-mono font-bold text-primary tracking-wider uppercase">SELECTED CAPSTONES</h4>
+      <div class="space-y-2 text-xs text-on-surface-variant">
+        <div class="bg-surface-container-high p-3 rounded-lg border border-outline-variant/30">
+          <p class="font-bold text-on-surface">1. World Happiness Report (Data Science Capstone)</p>
+          <p class="mt-0.5">Two-sample independent t-test (t = 16.84, p &lt; 0.0001), 5 regression model architectures benchmarking (R² &amp; RMSE), residual diagnostics, and automated reporting.</p>
+        </div>
+        <div class="bg-surface-container-high p-3 rounded-lg border border-outline-variant/30">
+          <p class="font-bold text-on-surface">2. GrindRoom (Real-Time Collaborative Study Platform)</p>
+          <p class="mt-0.5">Event-driven architecture with WebSockets, synchronized pomodoro timers, multi-room state orchestration, and telemetry tracking.</p>
+        </div>
+        <div class="bg-surface-container-high p-3 rounded-lg border border-outline-variant/30">
+          <p class="font-bold text-on-surface">3. BenefitBuddy (Civic Intelligence &amp; Eligibility Engine)</p>
+          <p class="mt-0.5">AI-powered civic scheme eligibility matching with XGBoost/Gemini, automated document verification, and multilingual voice access.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="pt-2 flex flex-wrap items-center justify-between gap-3 border-t border-outline-variant/30">
+      <div class="flex items-center gap-2">
+        <button onclick="window.print()" class="bg-primary-container text-on-primary-container font-bold px-5 py-2 rounded-full text-xs clay-pill flex items-center gap-1.5 active:translate-y-0.5 transition-all cursor-pointer">
+          <span class="material-symbols-outlined text-[16px]">print</span>
+          <span>Print / Save PDF</span>
+        </button>
+        <a href="https://github.com/nuhita-netizen" target="_blank" rel="noopener noreferrer" class="bg-surface-variant text-on-surface hover:text-primary px-4 py-2 rounded-full text-xs border border-outline-variant/40 clay-pill flex items-center gap-1.5 transition-all cursor-pointer">
+          <span class="material-symbols-outlined text-[16px]">code</span>
+          <span>GitHub</span>
+        </a>
+        <a href="mailto:nuhitag6@gmail.com" class="bg-surface-variant text-on-surface hover:text-primary px-4 py-2 rounded-full text-xs border border-outline-variant/40 clay-pill flex items-center gap-1.5 transition-all cursor-pointer">
+          <span class="material-symbols-outlined text-[16px]">mail</span>
+          <span>Email</span>
+        </a>
+      </div>
+      <button onclick="closeResumeModal()" class="px-4 py-2 rounded-full bg-surface-variant text-on-surface-variant hover:text-on-surface text-xs cursor-pointer">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- Interactive Engine Script -->
+<script>
+  // 1. Navigation Active Link & Smooth Scrolling
+  document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const brandLogo = document.getElementById('brand-logo');
+
+    // Smooth scroll and active state on click
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+          setActiveNav(link);
+        }
+      });
+    });
+
+    if (brandLogo) {
+      brandLogo.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        if (navLinks.length > 0) setActiveNav(navLinks[0]);
+      });
+    }
+
+    function setActiveNav(activeLink) {
+      navLinks.forEach(link => {
+        link.classList.remove('text-primary', 'font-bold', 'border-b-2', 'border-primary', 'pb-0.5');
+        link.classList.add('text-on-surface-variant');
+      });
+      activeLink.classList.remove('text-on-surface-variant');
+      activeLink.classList.add('text-primary', 'font-bold', 'border-b-2', 'border-primary', 'pb-0.5');
+    }
+
+    // ScrollSpy to update active link on scroll
+    const sections = ['#home', '#about', '#projects', '#research', '#skills', '#education', '#certs', '#resume', '#contact'];
+    window.addEventListener('scroll', () => {
+      let currentSection = '';
+      sections.forEach(secId => {
+        const el = document.querySelector(secId);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 200 && rect.bottom >= 100) {
+            currentSection = secId;
+          }
+        }
+      });
+      if (currentSection) {
+        navLinks.forEach(link => {
+          if (link.getAttribute('href') === currentSection) {
+            setActiveNav(link);
+          }
         });
-    </script>
-<style>
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+      }
+    });
+
+    // 2. Terminal System
+    const terminalModal = document.getElementById('terminal-modal');
+    const terminalInput = document.getElementById('terminal-input');
+    const terminalHistory = document.getElementById('terminal-history');
+    const terminalBody = document.getElementById('terminal-body');
+    const btnTerminal = document.getElementById('btn-terminal');
+    const btnMobileTerminal = document.querySelector('nav.md\\:hidden a[href="#terminal"]');
+
+    window.openTerminal = function() {
+      if (terminalModal) {
+        terminalModal.classList.remove('hidden');
+        setTimeout(() => terminalInput && terminalInput.focus(), 50);
+      }
+    };
+
+    window.closeTerminal = function() {
+      if (terminalModal) terminalModal.classList.add('hidden');
+    };
+
+    if (btnTerminal) btnTerminal.addEventListener('click', openTerminal);
+    if (btnMobileTerminal) {
+      btnMobileTerminal.addEventListener('click', (e) => {
+        e.preventDefault();
+        openTerminal();
+      });
+    }
+
+    // Command runner
+    window.runCommand = function(cmd) {
+      if (!cmd) return;
+      const cleanCmd = cmd.trim().toLowerCase();
+      
+      const userLine = document.createElement('p');
+      userLine.className = 'text-primary-fixed-dim font-bold pt-1';
+      userLine.innerHTML = `<span class="text-primary">nuhita@lab:~$</span> ${cmd}`;
+      terminalHistory.appendChild(userLine);
+
+      const respLine = document.createElement('div');
+      respLine.className = 'text-on-surface pl-2 space-y-1';
+
+      switch (cleanCmd) {
+        case 'help':
+          respLine.innerHTML = `
+            <p class="text-primary font-bold">AVAILABLE COMMANDS:</p>
+            <p>• <span class="text-primary font-bold">projects</span>: List all 3 capstones & engineering platforms</p>
+            <p>• <span class="text-primary font-bold">stats</span>: View hypothesis testing metrics & model benchmarks</p>
+            <p>• <span class="text-primary font-bold">skills</span>: Output data science and full-stack technical stack</p>
+            <p>• <span class="text-primary font-bold">about</span>: View candidate dossier and academic background</p>
+            <p>• <span class="text-primary font-bold">resume</span>: Launch academic & research dossier modal</p>
+            <p>• <span class="text-primary font-bold">contact</span>: Display email, GitHub & lab channels</p>
+            <p>• <span class="text-primary font-bold">palette</span>: Cycle retro aesthetic color palette</p>
+            <p>• <span class="text-primary font-bold">clear</span>: Clear terminal screen</p>
+            <p>• <span class="text-primary font-bold">exit</span>: Close this terminal</p>
+          `;
+          break;
+        case 'certs':
+        case 'certificates':
+          respLine.innerHTML = `
+            <p class="text-primary font-bold">ACADEMIC &amp; PROFESSIONAL HONORS:</p>
+            <p>1. <span class="text-on-surface font-bold">NASSCOM Certified</span>: Artificial Intelligence &amp; Data Analytics Professional</p>
+            <p>2. <span class="text-on-surface font-bold">Coursera Specialization</span>: C for Beginners &amp; Programming Foundations</p>
+            <p>3. <span class="text-on-surface font-bold">YUVA Data Analytics Internship</span>: 5-Week Capstone Completion</p>
+            <p>4. <span class="text-on-surface font-bold">Forage Virtual Internship</span>: Software Engineering &amp; Data Analytics</p>
+          `;
+          break;
+        case 'projects':
+          respLine.innerHTML = `
+            <p class="text-primary font-bold">PORTFOLIO CAPSTONES &amp; SYSTEMS:</p>
+            <p>1. <span class="text-on-surface font-bold">World Happiness Report (Lead Capstone)</span> — t=16.84, p&lt;0.0001 | <a href="https://github.com/nuhita-netizen/Happiness-report" target="_blank" class="text-primary underline">github.com/.../Happiness-report</a></p>
+            <p>2. <span class="text-on-surface font-bold">GrindRoom</span> — WebSockets Pomodoro Synchronization | <a href="https://github.com/nuhita-netizen/Studybuddy" target="_blank" class="text-primary underline">github.com/.../Studybuddy</a></p>
+            <p>3. <span class="text-on-surface font-bold">BenefitBuddy</span> — Civic Scheme Eligibility & NLP | <a href="https://github.com/nuhita-netizen" target="_blank" class="text-primary underline">github.com/nuhita-netizen</a></p>
+          `;
+          break;
+        case 'stats':
+          respLine.innerHTML = `
+            <p class="text-primary font-bold">STATISTICAL INFERENCE TELEMETRY:</p>
+            <p>• Independent Two-Sample t-Test: <span class="text-primary">t = 16.84</span> (p = 1.14e-42, Reject H₀)</p>
+            <p>• Benchmarking Architecture: OLS, Ridge, Lasso, ElasticNet, Random Forest</p>
+            <p>• Best Model Fit: <span class="text-primary">R² = 0.824</span> | <span class="text-primary">RMSE = 0.38</span></p>
+            <p>• Multicollinearity: Variance Inflation Factor (VIF) &lt; 3.2 across indicators</p>
+          `;
+          break;
+        case 'skills':
+          respLine.innerHTML = `
+            <p class="text-primary font-bold">TECHNICAL TOOLCHAIN:</p>
+            <p>• Languages: Python (Core/OOP), SQL, JavaScript, HTML5/CSS3</p>
+            <p>• Analytics: Pandas, NumPy, Scikit-Learn, SciPy, Matplotlib, Seaborn</p>
+            <p>• Frameworks &amp; Backend: FastAPI, React.js, Express, WebSockets, Node.js</p>
+            <p>• Tools: Docker, Git/GitHub, PostgreSQL, SQLite, Vite, Tailwind CSS</p>
+          `;
+          break;
+        case 'about':
+          respLine.innerHTML = `
+            <p class="text-primary font-bold">CANDIDATE DOSSIER:</p>
+            <p>• Name: Gajula Nuhita</p>
+            <p>• Education: B.Tech Computer Science & Engineering (Class of 2028)</p>
+            <p>• University: Jawaharlal Nehru Technological University (JNTU) Hyderabad</p>
+            <p>• Honors: NASSCOM Certified AI & Data Analytics Professional</p>
+          `;
+          break;
+        case 'contact':
+          respLine.innerHTML = `
+            <p class="text-primary font-bold">COMMUNICATION CHANNELS:</p>
+            <p>• Email: <a href="mailto:nuhitag6@gmail.com" class="text-primary underline">nuhitag6@gmail.com</a></p>
+            <p>• GitHub: <a href="https://github.com/nuhita-netizen" target="_blank" class="text-primary underline">github.com/nuhita-netizen</a></p>
+            <p>• Location: Hyderabad, Telangana, India</p>
+          `;
+          break;
+        case 'resume':
+          respLine.innerHTML = `<p class="text-primary">Launching Academic &amp; Research Dossier modal...</p>`;
+          setTimeout(openResumeModal, 300);
+          break;
+        case 'palette':
+          cyclePalette();
+          respLine.innerHTML = `<p class="text-primary">Palette toggled successfully.</p>`;
+          break;
+        case 'clear':
+          terminalHistory.innerHTML = '';
+          if (terminalInput) terminalInput.value = '';
+          return;
+        case 'exit':
+          closeTerminal();
+          return;
+        default:
+          respLine.innerHTML = `<p class="text-error">bash: command not found: ${cmd}. Type <span class="text-primary font-bold">'help'</span> for list.</p>`;
+      }
+
+      terminalHistory.appendChild(respLine);
+      if (terminalInput) terminalInput.value = '';
+      if (terminalBody) terminalBody.scrollTop = terminalBody.scrollHeight;
+    };
+
+    if (terminalInput) {
+      terminalInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          runCommand(terminalInput.value);
         }
-        @keyframes slideInLeft {
-            from { opacity: 0; transform: translateX(-100px); }
-            to { opacity: 1; transform: translateX(0); }
+      });
+    }
+
+    // 3. Theme Palette Switcher
+    const btnPalette = document.getElementById('btn-palette');
+    const paletteToast = document.getElementById('palette-toast');
+    const paletteToastText = document.getElementById('palette-toast-text');
+
+    const palettes = [
+      { name: 'Amber Honey (Default)', primary: '#ffc665', container: '#e5a93c', bg: '#0f150b', surf: '#1b2116' },
+      { name: 'Cyber Cyan ✦', primary: '#22d3ee', container: '#06b6d4', bg: '#06141a', surf: '#0c222c' },
+      { name: 'Matrix Emerald ✦', primary: '#4ade80', container: '#10b981', bg: '#06160b', surf: '#0e2614' },
+      { name: 'Solarized Terracotta ✦', primary: '#fb923c', container: '#ea580c', bg: '#180e09', surf: '#261610' }
+    ];
+    let currentPaletteIdx = 0;
+
+    window.cyclePalette = function() {
+      currentPaletteIdx = (currentPaletteIdx + 1) % palettes.length;
+      const p = palettes[currentPaletteIdx];
+
+      let styleEl = document.getElementById('dynamic-palette-style');
+      if (!styleEl) {
+        styleEl = document.createElement('style');
+        styleEl.id = 'dynamic-palette-style';
+        document.head.appendChild(styleEl);
+      }
+
+      styleEl.innerHTML = `
+        :root {
+          --color-primary: ${p.primary};
+          --color-primary-container: ${p.container};
         }
-        @keyframes slideInRight {
-            from { opacity: 0; transform: translateX(100px); }
-            to { opacity: 1; transform: translateX(0); }
+        .text-primary, [data-palette-text] { color: ${p.primary} !important; }
+        .bg-primary-container { background-color: ${p.container} !important; }
+        .border-primary { border-color: ${p.primary} !important; }
+      `;
+
+      if (paletteToast && paletteToastText) {
+        paletteToastText.textContent = `Palette: ${p.name}`;
+        paletteToast.classList.remove('opacity-0', 'translate-y-[-20px]');
+        paletteToast.classList.add('opacity-100', 'translate-y-0');
+        setTimeout(() => {
+          paletteToast.classList.remove('opacity-100', 'translate-y-0');
+          paletteToast.classList.add('opacity-0', 'translate-y-[-20px]');
+        }, 2000);
+      }
+    };
+
+    if (btnPalette) btnPalette.addEventListener('click', cyclePalette);
+
+    // 4. Resume Dossier Modal
+    const resumeModal = document.getElementById('resume-modal');
+    const btnResume = document.getElementById('btn-resume');
+
+    window.openResumeModal = function() {
+      if (resumeModal) resumeModal.classList.remove('hidden');
+    };
+
+    window.closeResumeModal = function() {
+      if (resumeModal) resumeModal.classList.add('hidden');
+    };
+
+    if (btnResume) {
+      btnResume.addEventListener('click', (e) => {
+        e.preventDefault();
+        openResumeModal();
+      });
+    }
+
+    // Global keyboard shortcuts (Esc closes modals, Ctrl+K or ~ opens terminal)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeTerminal();
+        closeResumeModal();
+      }
+      if ((e.ctrlKey && e.key === 'k') || e.key === '`') {
+        e.preventDefault();
+        if (terminalModal && !terminalModal.classList.contains('hidden')) {
+          closeTerminal();
+        } else {
+          openTerminal();
         }
-    </style>
+      }
+    });
+  });
+</script>
 </body></html>

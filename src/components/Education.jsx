@@ -6,7 +6,7 @@ export default function Education() {
   const achievements = [
     "Built 2 substantial projects with production deployment",
     "Project Leader for GrindRoom (team collaboration)",
-    "Currently developing Vibe Spaciee (solo full-stack project)",
+    "Developing BenefitBuddy (AI-driven civic eligibility platform)",
     "Strong foundation in algorithms and data structures",
     "Working at intersection of AI/ML and real-time systems"
   ];
