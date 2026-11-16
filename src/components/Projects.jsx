@@ -29,6 +29,30 @@ export default function Projects() {
       status: "Completed (YUVA Data Analytics Internship)",
       primary: true
     },
+    {
+      title: "BrewSpare: Brewery Maintenance & Spare-Parts Planning Engine",
+      description: "A local-first brewery maintenance and spare-parts planning website developed for TCS Hackathon. It connects machine condition, maintenance history, spare-part demand, supplier lead times, and inventory carrying cost into one unified decision-support workflow.",
+      problem: "How can manufacturing plants eliminate costly equipment downtime through predictive maintenance scheduling and inventory planning without over-purchasing spare parts?",
+      tech: ["Next.js", "React", "TypeScript", "FastAPI", "SQLAlchemy", "SQLite", "Predictive Analytics"],
+      features: [
+        "Plant command center with real-time risk evaluation across key industrial equipment",
+        "Deterministic spare-parts demand forecasting tied to supplier lead times and maintenance frequency",
+        "Procurement planner creating local decision-support planning records",
+        "Excess and slow-moving inventory identifier calculating holding costs",
+        "Scenario simulator modeling supplier delays, shipping bottlenecks, and production increases"
+      ],
+      learnings: [
+        "Architecting local-first full-stack platforms with Next.js, FastAPI, and SQLAlchemy",
+        "Predictive maintenance logic and equipment condition risk scoring",
+        "Inventory optimization models and supply chain simulation analytics",
+        "Fast-paced product engineering and rapid prototyping for hackathons"
+      ],
+      github: "https://github.com/nuhita-netizen/BrewSpare-hack",
+      demo: "#",
+      role: "TCS Hackathon Project",
+      status: "Completed (TCS Hackathon)",
+      primary: false
+    },
 
     {
       title: "BenefitBuddy: AI-Powered Government Scheme Discovery & Eligibility Platform",
